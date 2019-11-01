@@ -1,6 +1,21 @@
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura'), url(./assets/fonts/FuturaLT.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: local('FuturaBold'), url(./assets/fonts/FuturaLT-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'FuturaOblique';
+  src: local('FuturaOblique'), url(./assets/fonts/FuturaLT-Oblique.woff) format('woff');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: "Futura", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;

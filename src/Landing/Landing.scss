@@ -1,0 +1,52 @@
+@import "../assets/sass/theme";
+@import "../index.css";
+// @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+body {
+    text-align: left;
+}
+
+.landingContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+#helloAnimation {
+    width: 20vw;
+    min-width: 200px;
+}
+
+#introPic {
+    width: 25vw;
+    border-radius: 500px;
+    min-width: 200px;
+    margin:0;
+    padding:0;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.halfContainer {
+    width: 44vw;
+    // border-color:red;
+    // border-width: 1px;
+    // border-style: solid;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 50pt;
+    color: $turquoise;
+    font-family: "FuturaBold";
+}
+
+.infoContainer {
+    // border-color:red;
+    // border-width: 1px;
+    // border-style: solid;
+    max-width: 30vw;
+}
