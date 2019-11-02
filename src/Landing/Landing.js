@@ -10,21 +10,17 @@ class Landing extends Component {
         return (
             <Box className="landingContainer" display="flex" flexDirection="row-reverse" flexWrap="wrap"
                 justifyContent="space-evenly" alignItems="center">
-                <Box m={5} ml={1} className="halfContainer" >
-                <img src={introPic} id="introPic"></img>
+                <Box m={"2vw"} ml={0} className="halfContainer" display="flex" justifyContent="center">
+                    <img src={introPic} id="introPic"></img>
                 </Box>
-                {/* <Box display="flex" m={5} flexDirection="row" justifyContent="center" className="halfContainer"> */}
-                <Box m={5} display="flex" flexDirection="column"  alignItems="center" className="halfContainer">
-                    
-                    <img src={helloGif} id="helloAnimation"></img><br />
-                    <div className="title">I'm Alison </div>
-                    <div>a product manager continually growing and welcoming new opportunities</div>
-                    <br/>
-                    <div className="italic">Currently in search of a Summer 2020 Product Internship</div>
+                <Box m={"2vw"} display="flex" flexDirection="column" alignItems="center" className="halfContainer">
+
+                    <img src={helloGif} id="helloAnimation"></img>
+                    <div className="leftAlign title">I'm Alison <span role="img" aria-label="smiley-face">🤗</span></div>
+                    <Box ml={"5vw"} ><div className="leftAlign">an aspiring product manager continually growing and welcoming new opportunities</div>
+                        <br />
+                        <div className="italic leftAlign">Currently in search of a Summer 2020 Product Internship</div></Box>
                 </Box></Box>
-
-            // </Box>
-
         )
     }
 }
