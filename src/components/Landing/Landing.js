@@ -15,13 +15,12 @@ class Landing extends Component {
             palette: {
                 primary: { main: colors.turquoise }
             }
-        }
-        )
+        })
 
         return (
             <ThemeProvider theme={theme}>
                 <Box className="landingContainer" display="flex" flexDirection="row-reverse" flexWrap="wrap"
-                    justifyContent="space-evenly" alignItems="center">
+                    justifyContent="space-evenly" alignItems="center" >
                     <Box m={"2vw"} ml={0} className="halfContainer" display="flex" justifyContent="center">
                         <img src={introPic} id="introPic"></img>
                     </Box>
@@ -32,9 +31,10 @@ class Landing extends Component {
                         <Box ml={"5vw"} ><div className="leftAlign">an aspiring product manager continually growing and welcoming new opportunities</div>
                             <br />
                             <div className="italic leftAlign">Currently in search of a Summer 2020 Product Internship</div></Box>
-                        <br/>
-                        <Button variant="outlined" color="primary" id="resumeButton" target="_blank" href={resume}>View Resume</Button>
-                    </Box></Box>
+                        <br />
+                        <Button variant="contained" color="primary" id="resumeButton" target="_blank" href={resume}>View Resume</Button>
+                    </Box>
+                </Box>
             </ThemeProvider>)
     }
 }
