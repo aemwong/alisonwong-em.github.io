@@ -7,7 +7,30 @@ body {
 }
 
 .projectsContainer {
-    height: 100vh;
+    // height: 100v;
     width: 100vw;
     background-color: $light-purple;
+}
+
+.projectImg {
+    height: 15vh;
+    text-align: left;
+
+}
+
+.hello {
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.project {
+    transition: 0.5s;
+    margin-left: calc(5vw + 20px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project:hover {
+    margin-left: 5vw;
 }
