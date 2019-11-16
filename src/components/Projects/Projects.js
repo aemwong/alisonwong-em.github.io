@@ -20,8 +20,8 @@ class Projects extends Component {
                 subtitle: 'designing a modified guitar for recovering stroke patients'
             }, {
                 img: Website,
-                title: 'Alisonwong-em',
-                subtitle: 'a personal website to showcase 3projects'
+                title: 'AlisonWong-em',
+                subtitle: 'a personal website to showcase projects'
             }, {
                 img: Coorporation,
                 title: 'Co-orporation!',
