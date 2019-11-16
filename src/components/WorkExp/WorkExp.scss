@@ -1,0 +1,23 @@
+@import "../../assets/sass/theme";
+@import "../../index.css";
+
+body {
+    text-align: left;
+}
+
+.jobsContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: $pink;
+}
+
+.jobImg {
+    height: 10vh;
+}
+
+.job {
+    // transition: 0.5s;
+    // margin-left: calc(5vw);
+    // margin-top: 10px;
+    // margin-bottom: 10px;
+}
