@@ -15,6 +15,7 @@ body {
 .projectImg {
     height: 15vh;
     text-align: left;
+    border-radius: 7px;
 
 }
 
@@ -26,11 +27,20 @@ body {
 
 .project {
     transition: 0.5s;
-    margin-left: calc(5vw + 20px);
+    margin-left: calc(5vw);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .project:hover {
-    margin-left: 5vw;
+    animation: rightSlide 0.5s ease forwards;
+}
+
+@keyframes rightSlide {
+    0%   {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
 }
