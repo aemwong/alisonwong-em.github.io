@@ -6,13 +6,13 @@ body {
 }
 
 .jobsContainer {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: $pink;
 }
 
 .jobImg {
-    height: 10vh;
+    width: calc(3vw + 30px);
 }
 
 .job {

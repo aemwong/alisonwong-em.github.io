@@ -5,6 +5,10 @@ import colors from "../../assets/sass/colors";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import TulipLogo from '../../assets/img/tulipIcon.png';
+import PivotalLogo from '../../assets/img/pivotallabsLogoIcon.png';
+import OpentextLogo from '../../assets/img/opentextLogoIcon.jpg';
+import AccedoLogo from '../../assets/img/AccedoLogoIcon.png';
+import BlaiseLogo from '../../assets/img/b-rgb.png';
 import './WorkExp.scss';
 
 
@@ -13,20 +17,31 @@ class Projects extends Component {
 
         const jobTitles = [
             {
+                img: BlaiseLogo,
+                title: 'Software Developer',
+                company: 'Blaise Transit',
+                subtitle: 'implementing frontend of applications with the best ux practices'
+            },{
                 img: TulipLogo,
                 title: 'Product Manager Intern',
                 company: 'Tulip Retail',
                 subtitle: 'improving existing modules to better meet customer requirements'
-            }, {
-                img: TulipLogo,
-                title: 'Product Manager Intern',
-                company: 'Tulip Retail',
-                subtitle: 'improving existing modules to better meet customer requirements'
-            }, {
-                img: TulipLogo,
-                title: 'Product Manager Intern',
-                company: 'Tulip Retail',
-                subtitle: 'improving existing modules to better meet customer requirements'
+            },{
+                img: AccedoLogo,
+                title: 'Product Integration Engineer',
+                company: 'Accedo',
+                subtitle: 'designing user interfaces to meet customer requirements'
+            },  {
+                img: OpentextLogo,
+                title: 'Software Developer',
+                company: 'Opentext Corporation',
+                subtitle: 'enhancing internal framework functions improving product robustness'
+            },
+            {
+                img: PivotalLogo,
+                title: 'Agile Test Engineer',
+                company: 'Pivotal Labs',
+                subtitle: 'automating ui tests to catch regression bugs in continuous integration.'
             },
 
         ]
@@ -36,9 +51,9 @@ class Projects extends Component {
                 {jobTitles.map((job) =>
                     <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
                         <img src={job.img} className="jobImg" />
-                        <Box flexDirection="column" display="flex" justifyContent="center" m={2}>
+                        <Box flexDirection="column" display="flex" justifyContent="center" m={3}>
                             <Box display="flex" flexDirection="row">
-                                <div className="italic" style={{ color: colors.turquoise }}>{job.title},&nbsp;</div>
+                                <div style={{ color: colors.turquoise }}>{job.title},&nbsp;</div>
                                 <div className="italic">{job.company}</div>
                             </Box>
                             <div style={{ fontSize: '12pt' }}>{job.subtitle}</div>
