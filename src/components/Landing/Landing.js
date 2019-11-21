@@ -22,11 +22,11 @@ class Landing extends Component {
                 <Box className="landingContainer" display="flex" flexDirection="row-reverse" flexWrap="wrap"
                     justifyContent="space-evenly" alignItems="center" >
                     <Box m={"2vw"} ml={0} className="halfContainer" display="flex" justifyContent="center">
-                        <img src={introPic} id="introPic"></img>
+                        <img src={introPic} id="introPic" alt=""></img>
                     </Box>
                     <Box m={"2vw"} display="flex" flexDirection="column" alignItems="center" className="halfContainer">
 
-                        <img src={helloGif} id="helloAnimation"></img>
+                        <img src={helloGif} id="helloAnimation" alt=""></img>
                         <div className="leftAlign title">I'm Alison <span role="img" aria-label="smiley-face">🤗</span></div>
                         <Box ml={"5vw"} ><div className="leftAlign">an aspiring product manager continually growing and welcoming new opportunities</div>
                             <br />

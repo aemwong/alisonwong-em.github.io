@@ -1,0 +1,102 @@
+@import "../../assets/sass/theme";
+
+body {
+    color: $dark-gray;
+}
+
+@media (max-width: 530px) {
+    body {
+      margin-top: 30px;
+    }
+}
+
+a {
+    border-bottom: 3px $turquoise dotted;
+    text-decoration: none;
+    // animation: outShadow 0.2s ease forwards;
+}
+
+a:active, a:visited {
+    color: $dark-gray;
+}
+
+a:hover {
+    color: $turquoise,
+}
+
+.name {
+    font-family: "FuturaBold";
+    font-size: 24pt;
+    position: relative; 
+    margin-bottom: 10px;
+}
+
+.name::after{ 
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: 1px; 
+    left: 0;
+    width: 20%;
+    background: $turquoise;
+ }
+
+.aboutContainer {
+    width: 100vw;
+    background-color: white;
+}
+
+.picContainer {
+    width: 25vw;
+    min-width: 250px;
+}
+
+.bioContainer {
+    width: 55vw;
+    min-width: 250px;
+    font-size: 14pt;
+}
+
+#square {
+    position: absolute;
+    margin-top: calc(10vh + 20px);
+    margin-left: calc(4vw + 20px);
+    z-index:0;
+    width: 18vw;
+    min-width: 160px;
+}
+
+#aboutPic {
+    // display:none;
+    width: 25vw;
+    border-radius: 1000px;
+    z-index:1;
+    min-width: 200px;
+    margin:3vh;
+    padding:0;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes hoverShadow {
+    0%   {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12); 
+    }
+}
+
+@keyframes outShadow {
+    0%   {
+        box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12); 
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: scale(1);
+    }
+}

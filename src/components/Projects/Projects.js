@@ -33,10 +33,9 @@ class Projects extends Component {
             <Box className="projectsContainer" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly">
                 <div className="italic" style={{ margin: '20px 0' }}>What I've been up to recently...</div>
                 {projectTitles.map((project) =>
-
                     <Paper style={{ borderRadius: '7px 0 0 7px', paddingRight: '20px' }} className="project">
                         <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
-                            <img src={project.img} className="projectImg" />
+                            <img src={project.img} className="projectImg" alt="" />
                             <Box flexDirection="column" display="flex" justifyContent="center" m={2}>
                                 <div style={{ color: colors.turquoise }}>{project.title}</div>
                                 <div style={{ fontSize: '12pt' }}>{project.subtitle}</div>

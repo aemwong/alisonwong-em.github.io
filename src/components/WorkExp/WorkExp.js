@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
-import Paper from '@material-ui/core/Paper';
 import colors from "../../assets/sass/colors";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import TulipLogo from '../../assets/img/tulipIcon.png';
 import PivotalLogo from '../../assets/img/pivotallabsLogoIcon.png';
 import OpentextLogo from '../../assets/img/opentextLogoIcon.jpg';
@@ -50,7 +47,7 @@ class Projects extends Component {
                 <div className="italic" style={{ margin: '20px 0' }}>Some of my work experience...</div>
                 {jobTitles.map((job) =>
                     <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
-                        <img src={job.img} className="jobImg" />
+                        <img src={job.img} className="jobImg" alt=""/>
                         <Box flexDirection="column" display="flex" justifyContent="center" m={3}>
                             <Box display="flex" flexDirection="row">
                                 <div style={{ color: colors.turquoise }}>{job.title},&nbsp;</div>
