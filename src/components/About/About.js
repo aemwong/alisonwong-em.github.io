@@ -26,8 +26,8 @@ class About extends Component {
                         <div className="leftAlign name">Alison Wong</div>
                         <div className="leftAlign">I’m a Systems Design Engineering student at the University of Waterloo with an eye for design and a passion for development to create the best user experience for products.
                                 <br /><br />
-                            Outside of school and work, you might catch me singing with the <a class="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/TheAcaBellas">UW AcaBellas</a>, 
-                            serving at <a class="hyperlink" target="_blank" href="https://www.uwccf.com/" rel="noopener noreferrer">UWCCF</a> or doodling <a class="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/aw.doodles/">“hello”</a> on pieces of paper.
+                            Outside of school and work, you might catch me singing with the <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/TheAcaBellas">UW AcaBellas</a>, 
+                            serving at <a className="hyperlink" target="_blank" href="https://www.uwccf.com/" rel="noopener noreferrer">UWCCF</a> or doodling <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/aw.doodles/">“hello”</a> on pieces of paper.
                         </div>
                         <br />
                         <div className="italic leftAlign">Currently, I’m looking for a 4-month internship for the Summer 2020 term in the Product Management field.</div>

@@ -15,14 +15,17 @@ class Projects extends Component {
 
         const projectTitles = [
             {
+                id: 'strumMaster',
                 img: StrumMaster,
                 title: 'Strum Master',
                 subtitle: 'designing a modified guitar for recovering stroke patients'
             }, {
+                id: 'personalWebsite',
                 img: Website,
                 title: 'AlisonWong-em',
                 subtitle: 'a personal website to showcase projects'
             }, {
+                id: 'coorporation',
                 img: Coorporation,
                 title: 'Co-orporation!',
                 subtitle: 'a game advocating for government change'
@@ -33,7 +36,7 @@ class Projects extends Component {
             <Box className="projectsContainer" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly">
                 <div className="italic" style={{ margin: '20px 0' }}>What I've been up to recently...</div>
                 {projectTitles.map((project) =>
-                    <Paper style={{ borderRadius: '7px 0 0 7px', paddingRight: '20px' }} className="project">
+                    <Paper key={project.id} style={{ borderRadius: '7px 0 0 7px', paddingRight: '20px' }} className="project">
                         <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
                             <img src={project.img} className="projectImg" alt="" />
                             <Box flexDirection="column" display="flex" justifyContent="center" m={2}>

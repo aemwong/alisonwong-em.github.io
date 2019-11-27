@@ -3,6 +3,7 @@ import './App.css';
 import Landing from './components/Landing/Landing';
 import Projects from './components/Projects/Projects';
 import WorkExp from './components/WorkExp/WorkExp';
+import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Gradient from './components/Gradient/Gradient';
 import colors from './assets/sass/colors';
@@ -21,6 +22,7 @@ function App() {
         <WorkExp />
         <Gradient color1={colors.pink} color2={colors.white} height="80px"/>
         <About />
+        <Footer />
     </div>
   );
 }

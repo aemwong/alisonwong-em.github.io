@@ -13,6 +13,11 @@
   src: local('FuturaOblique'), url(./assets/fonts/FuturaLT-Oblique.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'FuturaCondensed';
+  src: local('FuturaCondensed'), url(./assets/fonts/FuturaLT-Condensed.woff) format('woff');
+}
+
 body {
   margin: 0;
   font-family: "Futura", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

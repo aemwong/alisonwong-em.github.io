@@ -17,28 +17,33 @@ class Projects extends Component {
                 img: BlaiseLogo,
                 title: 'Software Developer',
                 company: 'Blaise Transit',
-                subtitle: 'implementing frontend of applications with the best ux practices'
+                subtitle: 'implementing frontend of applications with the best ux practices',
+                id: 'blaise'
             },{
                 img: TulipLogo,
                 title: 'Product Manager Intern',
                 company: 'Tulip Retail',
-                subtitle: 'improving existing modules to better meet customer requirements'
+                subtitle: 'improving existing modules to better meet customer requirements',
+                id: 'tulip'
             },{
                 img: AccedoLogo,
                 title: 'Product Integration Engineer',
                 company: 'Accedo',
-                subtitle: 'designing user interfaces to meet customer requirements'
+                subtitle: 'designing user interfaces to meet customer requirements',
+                id: 'accedo'
             },  {
                 img: OpentextLogo,
                 title: 'Software Developer',
                 company: 'Opentext Corporation',
-                subtitle: 'enhancing internal framework functions improving product robustness'
+                subtitle: 'enhancing internal framework functions improving product robustness',
+                id: 'opentext'
             },
             {
                 img: PivotalLogo,
                 title: 'Agile Test Engineer',
                 company: 'Pivotal Labs',
-                subtitle: 'automating ui tests to catch regression bugs in continuous integration.'
+                subtitle: 'automating ui tests to catch regression bugs in continuous integration.',
+                id: 'pivotal'
             },
 
         ]
@@ -46,10 +51,10 @@ class Projects extends Component {
             <Box className="jobsContainer" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly" alignContent="center">
                 <div className="italic" style={{ margin: '20px 0' }}>Some of my work experience...</div>
                 {jobTitles.map((job) =>
-                    <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
+                    <Box m={2} className="job leftAlign" justifyContent="flex-start" display="flex" alignItems="center">
                         <img src={job.img} className="jobImg" alt=""/>
-                        <Box flexDirection="column" display="flex" justifyContent="center" m={3}>
-                            <Box display="flex" flexDirection="row">
+                        <Box key={job.id} flexDirection="column" display="flex" justifyContent="center" m={3}>
+                            <Box display="flex" className="jobDetails">
                                 <div style={{ color: colors.turquoise }}>{job.title},&nbsp;</div>
                                 <div className="italic">{job.company}</div>
                             </Box>

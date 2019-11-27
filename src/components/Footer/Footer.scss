@@ -1,0 +1,26 @@
+@import "../../assets/sass/theme";
+@import "../../index.css";
+
+.footerContainer {
+    font-family: 'FuturaCondensed';
+    margin: 15px 30px;
+}
+
+a.external {
+    text-decoration: underline;
+    color: $turquoise;
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+a.external:active, a.external:visited {
+    color: $turquoise;
+}
+
+a.external:hover {
+    color: $dark-gray;
+}
+
+.credit {
+    color: $light-purple;
+}

@@ -10,17 +10,17 @@ body {
     }
 }
 
-a {
+a.hyperlink {
     border-bottom: 3px $turquoise dotted;
     text-decoration: none;
     // animation: outShadow 0.2s ease forwards;
 }
 
-a:active, a:visited {
+a.hyperlink:active, a.hyperlink:visited {
     color: $dark-gray;
 }
 
-a:hover {
+a.hyperlink:hover {
     color: $turquoise,
 }
 

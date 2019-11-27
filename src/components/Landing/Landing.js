@@ -32,7 +32,7 @@ class Landing extends Component {
                             <br />
                             <div className="italic leftAlign">Currently in search of a Summer 2020 Product Internship</div></Box>
                         <br />
-                        <Button variant="contained" color="primary" id="resumeButton" target="_blank" href={resume}>View Resume</Button>
+                        <Button variant="outlined" color="primary" id="resumeButton" target="_blank" href={resume}>View Resume</Button>
                     </Box>
                 </Box>
             </ThemeProvider>)
