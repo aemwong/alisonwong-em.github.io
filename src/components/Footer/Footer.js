@@ -8,7 +8,7 @@ class Footer extends Component {
         return (
             <Box display="flex" flexDirection="row" justifyContent="flex-end" className="footerContainer" flexGrow={1} flexWrap="wrap">
                 <Box mx={4} display="flex" className="credit"> Website created and designed by Alison Wong 
-                <span role='img' aria-label="peace-sign" style={{paddingLeft: 5}}>✌</span></Box>
+                <span role='img' aria-label="peace-sign" style={{paddingLeft: 5 }}>✌</span></Box>
                 <Box display="flex">
                     <a target="_blank" className="external" href="https://www.behance.net/aewong" rel="noopener noreferrer"> Behance</a>
                     <a target="_blank" className="external" href="https://github.com/aemwong" rel="noopener noreferrer">Github</a>
