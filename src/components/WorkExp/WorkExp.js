@@ -51,9 +51,9 @@ class Projects extends Component {
             <Box className="jobsContainer" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly" alignContent="center">
                 <div className="italic" style={{ margin: '20px 0' }}>Some of my work experience...</div>
                 {jobTitles.map((job) =>
-                    <Box m={2} className="job leftAlign" justifyContent="flex-start" display="flex" alignItems="center">
+                    <Box key={job.id} m={2} className="job leftAlign" justifyContent="flex-start" display="flex" alignItems="center">
                         <img src={job.img} className="jobImg" alt=""/>
-                        <Box key={job.id} flexDirection="column" display="flex" justifyContent="center" m={3}>
+                        <Box flexDirection="column" display="flex" justifyContent="center" m={3}>
                             <Box display="flex" className="jobDetails">
                                 <div style={{ color: colors.turquoise }}>{job.title},&nbsp;</div>
                                 <div className="italic">{job.company}</div>

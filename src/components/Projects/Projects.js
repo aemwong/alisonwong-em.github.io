@@ -18,7 +18,8 @@ class Projects extends Component {
                 id: 'strumMaster',
                 img: StrumMaster,
                 title: 'Strum Master',
-                subtitle: 'designing a modified guitar for recovering stroke patients'
+                subtitle: 'designing a modified guitar for recovering stroke patients', 
+                url: '/strumMaster'
             }, {
                 id: 'personalWebsite',
                 img: Website,
@@ -36,7 +37,8 @@ class Projects extends Component {
             <Box className="projectsContainer" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly">
                 <div className="italic" style={{ margin: '20px 0' }}>What I've been up to recently...</div>
                 {projectTitles.map((project) =>
-                    <Paper key={project.id} style={{ borderRadius: '7px 0 0 7px', paddingRight: '20px' }} className="project">
+                    <Paper key={project.id} style={{ borderRadius: '7px 0 0 7px', paddingRight: '20px' }} className="project"
+                    onClick={() => window.location.href = project.url }>
                         <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
                             <img src={project.img} className="projectImg" alt="" />
                             <Box flexDirection="column" display="flex" justifyContent="center" m={2}>
