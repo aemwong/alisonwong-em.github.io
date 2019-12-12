@@ -19,7 +19,7 @@ class Landing extends Component {
 
         return (
             <ThemeProvider theme={theme}>
-                <Box className="landingContainer" display="flex" flexDirection="row-reverse" flexWrap="wrap"
+                <Box className="landingContainer" id="home" display="flex" flexDirection="row-reverse" flexWrap="wrap"
                     justifyContent="space-evenly" alignItems="center" >
                     <Box m={"2vw"} ml={0} className="halfContainer" display="flex" justifyContent="center">
                         <img src={introPic} id="introPic" alt=""></img>

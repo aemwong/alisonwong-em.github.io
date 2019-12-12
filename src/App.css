@@ -5,6 +5,7 @@
   text-align: center;
   font-family: "Futura";
   font-size:14pt;
+  scroll-behavior: smooth;
 }
 
 .App-logo {
@@ -40,4 +41,8 @@
 
 .turquoise {
   color: $dark-gray;
+}
+
+html {
+  scroll-behavior: smooth;
 }

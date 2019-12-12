@@ -14,31 +14,34 @@ class Projects extends Component {
     render() {
 
         const projectTitles = [
+            // {
+            //     id: 'strumMaster',
+            //     img: StrumMaster,
+            //     title: 'Strum Master',
+            //     subtitle: 'designing a modified guitar for recovering stroke patients', 
+            //     url: '/strumMaster'
+            // },
+            //  {
+            //     id: 'personalWebsite',
+            //     img: Website,
+            //     title: 'AlisonWong-em',
+            //     subtitle: 'a personal website to showcase projects'
+            // }, 
             {
-                id: 'strumMaster',
-                img: StrumMaster,
-                title: 'Strum Master',
-                subtitle: 'designing a modified guitar for recovering stroke patients', 
-                url: '/strumMaster'
-            }, {
-                id: 'personalWebsite',
-                img: Website,
-                title: 'AlisonWong-em',
-                subtitle: 'a personal website to showcase projects'
-            }, {
                 id: 'coorporation',
                 img: Coorporation,
                 title: 'Co-orporation!',
-                subtitle: 'a game advocating for government change'
+                subtitle: 'a game advocating for government change',
+                url: 'https://www.behance.net/gallery/82891991/Co-orporation'
             },
 
         ]
         return (
-            <Box className="projectsContainer" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly">
+            <Box className="projectsContainer" id="projects"  display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly">
                 <div className="italic" style={{ margin: '20px 0' }}>What I've been up to recently...</div>
                 {projectTitles.map((project) =>
                     <Paper key={project.id} style={{ borderRadius: '7px 0 0 7px', paddingRight: '20px' }} className="project"
-                    onClick={() => window.location.href = project.url }>
+                    onClick={() => window.location = project.url }>
                         <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
                             <img src={project.img} className="projectImg" alt="" />
                             <Box flexDirection="column" display="flex" justifyContent="center" m={2}>

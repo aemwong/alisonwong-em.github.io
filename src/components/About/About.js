@@ -17,7 +17,7 @@ class About extends Component {
 
         return (
             <ThemeProvider theme={theme}>
-                <Box className="aboutContainer" display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-evenly" alignItems="center" >
+                <Box className="aboutContainer" id="about" display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-evenly" alignItems="center" >
                     <Box m={"2vw"} ml={0} className="picContainer" display="flex" justifyContent="center">
                         <img src={aboutPic} id="aboutPic" alt=""></img>
                         <img src={square} id="square" alt=""></img>

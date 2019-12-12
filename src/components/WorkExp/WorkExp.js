@@ -48,7 +48,7 @@ class Projects extends Component {
 
         ]
         return (
-            <Box className="jobsContainer" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly" alignContent="center">
+            <Box className="jobsContainer" id="experience" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly" alignContent="center">
                 <div className="italic" style={{ margin: '20px 0' }}>Some of my work experience...</div>
                 {jobTitles.map((job) =>
                     <Box key={job.id} m={2} className="job leftAlign" justifyContent="flex-start" display="flex" alignItems="center">

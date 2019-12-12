@@ -13,10 +13,10 @@ class ProjectDetails extends Component {
                 <Paper style={{ borderRadius: '10px', padding: '15px 20px' }} >
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2} className="return">
                         <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="xs" />
-                        <div className="returnText">Back to Projects</div>
+                        <div className="returnText" onClick={() => window.location.href = '/' }>Back to Projects</div>
                     </Box>
                     <br/>
-                <div className="title">Strum Master</div>
+                <div className="projectTitle">Strum Master</div>
                 <div className="subtitle">Designing a modified guitar for recovering stroke patients.</div>
                     <br/>
                 </Paper>
