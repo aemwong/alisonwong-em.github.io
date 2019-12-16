@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            {/* <Header /> */}
+            <Header />
             <Landing />
             <Gradient color1={colors.white} color2={colors.lightPurple} height="200px" />
             <Projects />

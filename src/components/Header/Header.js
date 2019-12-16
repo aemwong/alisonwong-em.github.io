@@ -4,25 +4,21 @@ import './Header.scss';
 
 class Header extends Component {
     scrollTo(location) {
-        const HEIGHT = 100;
+        const HEIGHT = 50;
         const node = document.getElementById(location);
-        console.log(node, node.scrollTop)
-        if (node !== null) { 
-            const elScrollPos = node.scrollTop;
-            console.log(elScrollPos)
-            // node.scrollIntoView({ block: 'start', behavior: 'smooth' })
-            window.scrollTo(0, elScrollPos - HEIGHT);
-        }
-    }
+        const y = node.getBoundingClientRect().top + window.pageYOffset - HEIGHT;
+    
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
 
     render() {
         return (
             <Box display="flex" flexDirection="row" justifyContent="flex-end" className="headerContainer"
                 flexGrow={1} flexWrap="wrap">
                 <Box display="flex">
-                    <a className="nav" onClick={() => document.getElementById('projects').scrollIntoView()}>Projects</a>
-                    <a className="nav" onClick={() => document.getElementById('experience').scrollIntoView()}>Experience</a>
-                    <a className="nav" onClick={() => document.getElementById('about').scrollIntoView()}>About</a>
+                    <a className="nav" onClick={this.scrollTo.bind(this, "projects")}>Projects</a>
+                    <a className="nav"  onClick={this.scrollTo.bind(this, "experience")}>Experience</a>
+                    <a className="nav" onClick={this.scrollTo.bind(this, "about")}>About</a>
                 </Box>
             </Box >
         )
