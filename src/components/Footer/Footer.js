@@ -11,7 +11,7 @@ class Footer extends Component {
                 <span role='img' aria-label="peace-sign" style={{paddingLeft: 5 }}>✌</span></Box>
                 <Box display="flex">
                     <a target="_blank" className="external" href="https://www.behance.net/aewong" rel="noopener noreferrer"> Behance</a>
-                    <a target="_blank" className="external" href="https://github.com/aemwong" rel="noopener noreferrer">Github</a>
+                    <a target="_blank" className="external" href="https://github.com/alisonwong-em" rel="noopener noreferrer">Github</a>
                     <a target="_blank" className="external" href="mailto:alison.wong@edu.uwaterloo.ca" rel="noopener noreferrer">Email</a>
                     <a target="_blank" className="external" href={resume} rel="noopener noreferrer">Resume</a>
                 </Box>
