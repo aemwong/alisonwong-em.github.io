@@ -13,7 +13,7 @@ body {
 a.hyperlink {
     border-bottom: 3px $turquoise dotted;
     text-decoration: none;
-    // animation: outShadow 0.2s ease forwards;
+    color: $turquoise;
 }
 
 a.hyperlink:active, a.hyperlink:visited {
@@ -67,7 +67,7 @@ a.hyperlink:hover {
 }
 
 #aboutPic {
-    // display:none;
+    height: 25vw;
     width: 25vw;
     border-radius: 1000px;
     z-index:1;
