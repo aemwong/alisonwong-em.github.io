@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import './Header.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faChevronUp, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
 
 class Header extends Component {
     scrollTo(location) {
@@ -23,9 +23,9 @@ class Header extends Component {
                 </Box> */}
 
                 <Box display="flex" mr={3}>
-                    <a className="nav" onClick={this.scrollTo.bind(this, "projects")}>Projects</a>
-                    <a className="nav" onClick={this.scrollTo.bind(this, "experience")}>Experience</a>
-                    <a className="nav" onClick={this.scrollTo.bind(this, "about")}>About</a>
+                <div className="nav" onClick={this.scrollTo.bind(this, "projects")}>Projects</div>
+                    <div className="nav" onClick={this.scrollTo.bind(this, "experience")}>Experience</div>
+                    <div className="nav" onClick={this.scrollTo.bind(this, "about")}>About</div>
                 </Box>
             </Box >
         )

@@ -1,10 +1,13 @@
 @import "./index.css";
 @import "./assets/sass/_theme.scss";
 
+body {
+  font-size: 14pt;
+}
+
 .App {
   text-align: center;
   font-family: "Futura";
-  font-size:14pt;
   scroll-behavior: smooth;
 }
 

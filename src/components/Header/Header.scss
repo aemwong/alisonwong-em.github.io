@@ -13,21 +13,17 @@
     z-index: 2;
 }
 
-a.nav {
+.nav {
+    text-transform: capitalize;
+}
+
+.nav {
     text-decoration: none;
     color: $dark-gray;
     margin: 0 5px;
     text-transform: uppercase;
 }
 
-a.nav:active, a.nav:visited {
-    color: $dark-gray;
-}
-
-.nav a:focus {
-    color: $dark-gray;
-}
-
-a.nav:hover {
+.nav:hover {
     color: $turquoise;
 }

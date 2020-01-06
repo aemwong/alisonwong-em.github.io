@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import colors from "../../assets/sass/colors";
-import StrumMaster from "../../assets/img/StrumMasterPreview.jpg";
-import Website from "../../assets/img/WebsiteMockupPreview.jpg";
+// import StrumMaster from "../../assets/img/StrumMasterPreview.jpg";
+// import Website from "../../assets/img/WebsiteMockupPreview.jpg";
 import Coorporation from "../../assets/img/CoorpPreview.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
@@ -37,11 +37,12 @@ class Projects extends Component {
 
         ]
         return (
-            <Box className="projectsContainer" id="projects"  display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly">
-                <div className="italic" style={{ margin: '20px 0' }}>What I've been up to recently...</div>
+            <Box className="projectsContainer" id="projects" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly">
+                <Box alignSelf="center"><div className="italic" style={{ margin: '20px 30px' }}>What I've been up to recently...</div>
+                </Box>
                 {projectTitles.map((project) =>
                     <Paper key={project.id} style={{ borderRadius: '7px 0 0 7px', paddingRight: '20px' }} className="project"
-                    onClick={() => window.location = project.url }>
+                        onClick={() => window.location = project.url}>
                         <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
                             <img src={project.img} className="projectImg" alt="" />
                             <Box flexDirection="column" display="flex" justifyContent="center" m={2}>

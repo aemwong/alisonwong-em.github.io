@@ -17,21 +17,21 @@ class Projects extends Component {
                 img: BlaiseLogo,
                 title: 'Software Developer',
                 company: 'Blaise Transit',
-                subtitle: 'implementing frontend of applications with the best ux practices',
+                subtitle: 'implementing application frontends with ux best practices',
                 id: 'blaise'
-            },{
+            }, {
                 img: TulipLogo,
                 title: 'Product Manager Intern',
                 company: 'Tulip Retail',
                 subtitle: 'improving existing modules to better meet customer requirements',
                 id: 'tulip'
-            },{
+            }, {
                 img: AccedoLogo,
                 title: 'Product Integration Engineer',
                 company: 'Accedo',
                 subtitle: 'designing user interfaces to meet customer requirements',
                 id: 'accedo'
-            },  {
+            }, {
                 img: OpentextLogo,
                 title: 'Software Developer',
                 company: 'Opentext Corporation',
@@ -49,10 +49,10 @@ class Projects extends Component {
         ]
         return (
             <Box className="jobsContainer" id="experience" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly" alignContent="center">
-                <div className="italic" style={{ margin: '20px 0' }}>Some of my work experience...</div>
+                <Box alignSelf="center"> <div className="italic" style={{ margin: '20px 0' }}>Some of my work experience...</div></Box>
                 {jobTitles.map((job) =>
                     <Box key={job.id} m={2} className="job leftAlign" justifyContent="flex-start" display="flex" alignItems="center">
-                        <img src={job.img} className="jobImg" alt=""/>
+                        <img src={job.img} className="jobImg" alt="" />
                         <Box flexDirection="column" display="flex" justifyContent="center" m={3}>
                             <Box display="flex" className="jobDetails">
                                 <div style={{ color: colors.turquoise }}>{job.title},&nbsp;</div>
