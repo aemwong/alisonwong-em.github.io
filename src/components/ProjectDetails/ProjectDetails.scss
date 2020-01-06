@@ -3,6 +3,7 @@
 .projectDetContainer {
     padding: 15px;
     background-color: $light-purple;
+    height: 100%;
 }
 
 .returnText {
@@ -25,6 +26,18 @@
 .subtitle {
     color: $dark-gray;
     font-size: 14pt;
+}
+
+#bannerImg {
+    width: 50vw;
+    height: 100%;
+    margin: 2vw;
+}
+
+.body {
+    margin: 0 10vw;
+    color: $dark-gray;
+    font-size: 12pt;
 }
 
 @keyframes leftSlide {

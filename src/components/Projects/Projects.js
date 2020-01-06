@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import colors from "../../assets/sass/colors";
-// import StrumMaster from "../../assets/img/StrumMasterPreview.jpg";
+import StrumMaster from "../../assets/img/StrumMasterPreview.jpg";
 // import Website from "../../assets/img/WebsiteMockupPreview.jpg";
 import Coorporation from "../../assets/img/CoorpPreview.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,13 +14,13 @@ class Projects extends Component {
     render() {
 
         const projectTitles = [
-            // {
-            //     id: 'strumMaster',
-            //     img: StrumMaster,
-            //     title: 'Strum Master',
-            //     subtitle: 'designing a modified guitar for recovering stroke patients', 
-            //     url: '/strumMaster'
-            // },
+            {
+                id: 'strumMaster',
+                img: StrumMaster,
+                title: 'Strum Master',
+                subtitle: 'designing a modified guitar for recovering stroke patients', 
+                url: '/projects/strumMaster'
+            },
             //  {
             //     id: 'personalWebsite',
             //     img: Website,

@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import colors from './assets/sass/colors';
-import ProjectDetails from './components/ProjectDetails/ProjectDetails';
 import Landing from './components/Landing/Landing';
 import Gradient from './components/Gradient/Gradient';
 import Projects from './components/Projects/Projects';
@@ -10,6 +9,7 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import StrumMaster from './components/ProjectDetails/StrumMaster';
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
             <About />
             <Footer />
           </ Route>
-          <Route path="/strumMaster"><ProjectDetails />
+          <Route path="/projects/strumMaster"><StrumMaster />
           </Route>
         </Switch>
       </Router>
