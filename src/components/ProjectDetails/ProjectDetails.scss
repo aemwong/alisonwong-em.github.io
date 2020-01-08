@@ -25,7 +25,7 @@
 
 .subtitle {
     color: $dark-gray;
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 #bannerImg {
@@ -34,10 +34,25 @@
     margin: 2vw;
 }
 
+.header {
+    color: $turquoise;
+    margin: 20px 10vw 5px calc(10px + 8vw);
+    font-size: 16pt;
+    text-align: left;
+}
+
 .body {
     margin: 0 10vw;
     color: $dark-gray;
+    font-size: 14pt;
+    text-align: left;
+}
+
+.caption {
+    color: darken($light-purple, 10%);
     font-size: 12pt;
+    margin-top: 10px;
+    text-align: center;
 }
 
 @keyframes leftSlide {
