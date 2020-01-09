@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import './Header.scss';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faChevronUp, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
+import LogoBlue from '../../assets/img/Logo.png'
+import LogoGray from '../../assets/img/LogoGray.png'
 
 class Header extends Component {
     scrollTo(location) {
@@ -15,15 +15,16 @@ class Header extends Component {
 
     render() {
         return (
-            <Box display="flex" flexDirection="row" justifyContent="flex-end" className="headerContainer"
+            <Box display="flex" flexDirection="row" justifyContent="space-between" className="headerContainer"
                 flexWrap="wrap" >
-                {/* <Box ml={3}>
-                    <a className="nav" id='topBtn' onClick={this.scrollTo.bind(this, "home")}>
-                        <FontAwesomeIcon icon={faChevronCircleUp}></FontAwesomeIcon></a>
-                </Box> */}
+                <Box ml={3} pt={1}>
+                    <div className="nav" id='topBtn' onClick={this.scrollTo.bind(this, "home")}>
+                        <img src={LogoBlue} className="logo" id="logoBlue" alt=""></img>
+                        <img src={LogoGray} className="logo" id="logoGray" alt=""></img></div>
+                </Box>
 
-                <Box display="flex" mr={3}>
-                <div className="nav" onClick={this.scrollTo.bind(this, "projects")}>Projects</div>
+                <Box display="flex" mr={3} py={2}>
+                    <div className="nav" onClick={this.scrollTo.bind(this, "projects")}>Projects</div>
                     <div className="nav" onClick={this.scrollTo.bind(this, "experience")}>Experience</div>
                     <div className="nav" onClick={this.scrollTo.bind(this, "about")}>About</div>
                 </Box>

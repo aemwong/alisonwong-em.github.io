@@ -3,7 +3,7 @@
 
 .headerContainer {
     font-family: 'FuturaCondensed';
-    padding: 15px 0px;
+    padding: 0px;
     position: fixed;
     right: 0;
     background-color: $white;
@@ -26,4 +26,27 @@
 
 .nav:hover {
     color: $turquoise;
+    cursor: pointer;
+}
+
+.logo{
+    width: 40px;
+    height: auto;
+    top:0;
+    left:0;
+}
+
+#topBtn:hover #logoGray {
+    display: block;
+}
+
+#topBtn #logoGray {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+
+#topBtn {
+    position: relative;
 }

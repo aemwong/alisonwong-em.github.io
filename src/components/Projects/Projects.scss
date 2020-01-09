@@ -26,6 +26,7 @@ body {
 
 .project:hover {
     animation: rightSlide 0.5s ease forwards;
+    cursor: pointer;
 }
 
 @keyframes rightSlide {

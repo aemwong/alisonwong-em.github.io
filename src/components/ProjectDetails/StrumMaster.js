@@ -155,7 +155,7 @@ class StrumMaster extends Component {
                     <div className="caption">Here is a short clip of me and my group playing at our end-of-term "concert"!</div>
                     <Box display="flex" justifyContent="center" mt={1}>
                     <div className="video">
-                        <iframe src="https://www.youtube.com/embed/Vz94pLQMJ20" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                        <iframe title="demo" src="https://www.youtube.com/embed/Vz94pLQMJ20" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
                     </div>
                     </Box>
                 </Paper>
