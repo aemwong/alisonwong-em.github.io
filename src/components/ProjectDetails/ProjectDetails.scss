@@ -10,10 +10,22 @@
     color: $turquoise; 
     font-size: 12pt;
     margin-left: 5px;
+    margin-right: 5px;
 }
 
 .return:hover {
-    animation: leftSlide 0.5s ease forwards;
+    animation: leftSlide 0.5s ease-out forwards;
+    cursor: pointer;
+}
+
+.nextProj:hover {
+    animation: rightSlide 0.5s ease-out forwards;
+    cursor: pointer;
+}
+
+.prevProj:hover {
+    animation: leftSlide 0.5s ease-out forwards;
+    cursor: pointer;
 }
 
 .projectTitle {
@@ -61,6 +73,15 @@
     }
     100% {
         transform: translateX(-10px);
+    }
+}
+
+@keyframes rightSlide {
+    0%   {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(10px);
     }
 }
 

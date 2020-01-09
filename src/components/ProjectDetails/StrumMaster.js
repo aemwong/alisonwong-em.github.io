@@ -16,19 +16,20 @@ import FullView from '../../assets/img/strumMaster/full view.jpg';
 import Manual from '../../assets/files/StrumMaster_UserManual.pdf';
 import './ProjectDetails.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faArrowCircleLeft, faArrowCircleRight, faHome } from '@fortawesome/free-solid-svg-icons'
 
 class StrumMaster extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{ borderRadius: '10px', padding: '15px 20px' }} >
+                <Paper style={{ borderRadius: '10px', padding: '15px 20px 30px 20px' }} >
 
-                    <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2} className="return">
-                        <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="xs" />
-                        <div className="returnText" onClick={() => window.location.href = '/'}>Back to Home</div>
+                    <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
+                        <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
+                            <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="s" />
+                            <div className="returnText">Back to Home</div>
+                        </Box>
                     </Box>
-                    <br />
                     <div className="projectTitle">Strum Master</div>
                     <div className="subtitle">Designing a modified guitar for recovering stroke patients.</div>
                     <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
@@ -44,10 +45,10 @@ class StrumMaster extends Component {
 
                         To ensure everyone was on the same page, we started the entire design process with a week
                             of the <a className="hyperlink" target="_blank" href="https://www.gv.com/sprint/" rel="noopener noreferrer">Google Design Sprint</a>.
-                We were told that we could throw away the entire idea if we hated it but working through the methodology gave us an idea of the
-                questions going through the team’s head, including HMW’s (How Might We’s). Some of the questions asked included: “How might we give
-                users the same feeling of playing music?” and “How might we cater to musicians of any skill background?”. Each member of the group
-                also created a persona to better understand the users we were trying to target.
+We were told that we could throw away the entire idea if we hated it but working through the methodology gave us an idea of the
+questions going through the team’s head, including HMW’s (How Might We’s). Some of the questions asked included: “How might we give
+users the same feeling of playing music?” and “How might we cater to musicians of any skill background?”. Each member of the group
+also created a persona to better understand the users we were trying to target.
                         <br /><br />
                         <Box display="flex" flexDirection="column" alignItems="center">
                             <Paper style={{ textAlign: 'center', width: 'calc(120px + 30vw)', height: '100%' }}>
@@ -89,7 +90,7 @@ class StrumMaster extends Component {
                     <div className="body">
 
                         As a first iteration, we tested the use of a linear potentiometer and a force sensitive strip. These parts were chosen to mimic the neck on the guitar. “Frets” were marked down on the board so that different held down positions produced different pitches. This was in an attempt to mimic the
-                            existing <a className="hyperlink" target="_blank" href="https://www.youtube.com/watch?v=MUdWeBYe3GY" rel="noopener noreferrer">modulin</a> (shown in class).
+                    existing <a className="hyperlink" target="_blank" href="https://www.youtube.com/watch?v=MUdWeBYe3GY" rel="noopener noreferrer">modulin</a> (shown in class). The linear potentiometer and force sensitive strip were connected to MIDI and an Arduino microcontroller to synthesize the sound.
                             <br /><br />
                         In the testing session, we asked users to test the intuitiveness of the linear potentiometer and its “fret” positions. Users expressed to ease of changing between position to play different notes. We also asked them to try and apply force on the strip to see the range of force that would be feasible and usable for our instrument. However, based on the feedback we received, it seemed that the force sensitive strip (which was meant to adjust volume of output) did not work effectively to simulate how a guitarist would control volume.
                             <br /><br />
@@ -125,8 +126,7 @@ class StrumMaster extends Component {
                     <div className="header italic">High Fidelity Prototype (HFP)</div>
                     <div className="body">
 
-                        Our final prototype featured a smaller box used to contain all our wiring and a shorter guitar neck embellished with cosmetic pegs so that it looked more like a real guitar. A switch was added to change between major and minor chords and a slider to adjust the output volume. The force sensitive strip was added at the end of the copper tape that would mute the sound when pressed. The final prototype can be seen in photos below. For more details, you can find the user manual for
-                        the instrument <a className="hyperlink" target="_blank" href={Manual} rel="noopener noreferrer">here</a>.
+                        Our final prototype featured a smaller box used to contain all our wiring and a shorter guitar neck embellished with cosmetic pegs so that it looked more like a real guitar. A switch was added to change between major and minor chords and a slider to adjust the output volume. The force sensitive strip was added at the end of the copper tape that would mute the sound when pressed. The final prototype can be seen in photos below.
                             <br /><br />
                         Based on the given feedback, we moved forward with the copper tape and the linear potentiometer to create a guitar-like instrument. To make it more accessible, the length of the copper tape was extended. To increase the robustness of the prototype, wires were soldered to protoboards. Taking inspiration from the cigar box guitar, all the wiring was placed inside a shoebox, hidden from the user. The linear potentiometer was attached onto a wooden stick like on the neck of a real guitar. The six pieces of copper tape were mapped to play different major chords depending on the “fret” that was held on the neck. A pressure control was added for volume control. This would be like when a guitarist strums harder to produce a louder sound.
                             <br /><br />
@@ -151,15 +151,29 @@ class StrumMaster extends Component {
                         I also learned the importance of listening and understanding from the user testing sessions that were held for the different iterations of our product. Though we had a script prepared for each session, it was important to actively listen and go off-script when appropriate so that the user can elaborate on their insights. Also, it was a privilege to have been given the opportunity to test the product with real users who could give us honest feedback. You can only go so far always testing with classmates
                         <br /><br />
                         Finally, I was really proud of myself and my team for being able to actually to create a working instrument that we could play music with. It was far from being a product that we could actually put on the market and there were still several features that we could implement if given more time, but overall it was a very rewarding experience to create a product from scratch.
-                            </div>
-                    <br /><br />
+                        <br /><br />
+                        For more details about the instrument, you can find the user manual for
+                        the instrument <a className="hyperlink" target="_blank" href={Manual} rel="noopener noreferrer">here</a>.
+                        </div>
+                    <br />
                     <div className="caption">Here is a short clip of me and my group playing at our end-of-term "concert"!</div>
                     <Box display="flex" justifyContent="center" mt={1}>
-                    <div className="video">
-                        <iframe title="demo" src="https://www.youtube.com/embed/Vz94pLQMJ20" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-                    </div>
+                        <div className="video">
+                            <iframe title="demo" src="https://www.youtube.com/embed/Vz94pLQMJ20" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                        </div>
                     </Box>
-                    <br/>
+                    <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" m={2}>
+                        <Box display='flex' justifyContent='center' alignItems="center"
+                            className="prevProj" onClick={() => window.location.href = '/'}>
+                            <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="s" />
+                            <div className="returnText">PREVIOUS</div>
+                        </Box>
+                        <Box display='flex' justifyContent='center' alignItems="center"
+                            className="nextProj" onClick={() => window.location.href = '/'}>
+                            <div className="returnText">NEXT</div>
+                            <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="s" />
+                        </Box>
+                    </Box>
                 </Paper>
             </div>
         )
