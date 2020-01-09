@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import '../Footer/Footer.scss';
-import resume from '../../assets/img/AlisonWong_Resume.pdf'
+import resume from '../../assets/files/AlisonWong_Resume.pdf'
 
 class Footer extends Component {
     render() {

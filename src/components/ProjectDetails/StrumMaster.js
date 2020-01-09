@@ -13,6 +13,7 @@ import MFP from '../../assets/img/strumMaster/MFP.png';
 import HFPBody from '../../assets/img/strumMaster/IMG_7073.jpeg';
 import HFPOpen from '../../assets/img/strumMaster/IMG_7074.jpeg';
 import FullView from '../../assets/img/strumMaster/full view.jpg';
+import Manual from '../../assets/files/StrumMaster_UserManual.pdf';
 import './ProjectDetails.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
@@ -125,7 +126,7 @@ class StrumMaster extends Component {
                     <div className="body">
 
                         Our final prototype featured a smaller box used to contain all our wiring and a shorter guitar neck embellished with cosmetic pegs so that it looked more like a real guitar. A switch was added to change between major and minor chords and a slider to adjust the output volume. The force sensitive strip was added at the end of the copper tape that would mute the sound when pressed. The final prototype can be seen in photos below. For more details, you can find the user manual for
-                        the instrument <a className="hyperlink" target="_blank" href="https://www.uwccf.com/" rel="noopener noreferrer">here</a>.
+                        the instrument <a className="hyperlink" target="_blank" href={Manual} rel="noopener noreferrer">here</a>.
                             <br /><br />
                         Based on the given feedback, we moved forward with the copper tape and the linear potentiometer to create a guitar-like instrument. To make it more accessible, the length of the copper tape was extended. To increase the robustness of the prototype, wires were soldered to protoboards. Taking inspiration from the cigar box guitar, all the wiring was placed inside a shoebox, hidden from the user. The linear potentiometer was attached onto a wooden stick like on the neck of a real guitar. The six pieces of copper tape were mapped to play different major chords depending on the “fret” that was held on the neck. A pressure control was added for volume control. This would be like when a guitarist strums harder to produce a louder sound.
                             <br /><br />
@@ -158,6 +159,7 @@ class StrumMaster extends Component {
                         <iframe title="demo" src="https://www.youtube.com/embed/Vz94pLQMJ20" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
                     </div>
                     </Box>
+                    <br/>
                 </Paper>
             </div>
         )

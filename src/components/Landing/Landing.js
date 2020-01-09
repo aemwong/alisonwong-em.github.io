@@ -6,7 +6,7 @@ import introPic from '../../assets/img/landingImg.jpg'
 import Button from '@material-ui/core/Button';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import colors from "../../assets/sass/colors";
-import resume from "../../assets/img/AlisonWong_Resume.pdf";
+import resume from "../../assets/files/AlisonWong_Resume.pdf";
 
 class Landing extends Component {
 
