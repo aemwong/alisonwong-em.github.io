@@ -36,13 +36,13 @@
 
 .header {
     color: $turquoise;
-    margin: 20px 10vw 5px calc(10px + 8vw);
+    margin: 20px 0 5px 0;
     font-size: 16pt;
-    text-align: left;
+    text-align: center;
 }
 
 .body {
-    margin: 0 10vw;
+    margin: 0px 0px;
     color: $dark-gray;
     font-size: 14pt;
     text-align: left;
@@ -63,3 +63,39 @@
         transform: translateX(-10px);
     }
 }
+
+.video {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.video::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .body { 
+       margin: 0 10vw;
+    } 
+
+    .header {
+        margin: 20px 10vw 5px calc(10px + 8vw);
+        text-align: left;
+    }
+
+    .video {
+        width:70%;
+    }
+
+ }
