@@ -16,7 +16,7 @@ import FullView from '../../assets/img/strumMaster/full view.jpg';
 import Manual from '../../assets/files/StrumMaster_UserManual.pdf';
 import './ProjectDetails.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft, faArrowCircleRight, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 class StrumMaster extends Component {
     render() {
@@ -26,12 +26,13 @@ class StrumMaster extends Component {
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
-                            <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="s" />
+                            <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="sm" />
                             <div className="returnText">Back to Home</div>
                         </Box>
                     </Box>
                     <div className="projectTitle">Strum Master</div>
-                    <div className="subtitle">Designing a modified guitar for recovering stroke patients.</div>
+                    <div className="description">Designing a modified guitar for recovering stroke patients.</div>
+                    <div className="subtitle">Product Design · User Testing · Prototyping · Development</div>
                     <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
                     <div className="header italic">The Problem</div>
                     <div className="body">
@@ -45,10 +46,10 @@ class StrumMaster extends Component {
 
                         To ensure everyone was on the same page, we started the entire design process with a week
                             of the <a className="hyperlink" target="_blank" href="https://www.gv.com/sprint/" rel="noopener noreferrer">Google Design Sprint</a>.
-We were told that we could throw away the entire idea if we hated it but working through the methodology gave us an idea of the
-questions going through the team’s head, including HMW’s (How Might We’s). Some of the questions asked included: “How might we give
-users the same feeling of playing music?” and “How might we cater to musicians of any skill background?”. Each member of the group
-also created a persona to better understand the users we were trying to target.
+                    We were told that we could throw away the entire idea if we hated it but working through the methodology gave us an idea of the
+                    questions going through the team’s head, including HMW’s (How Might We’s). Some of the questions asked included: “How might we give
+                    users the same feeling of playing music?” and “How might we cater to musicians of any skill background?”. Each member of the group
+                    also created a persona to better understand the users we were trying to target.
                         <br /><br />
                         <Box display="flex" flexDirection="column" alignItems="center">
                             <Paper style={{ textAlign: 'center', width: 'calc(120px + 30vw)', height: '100%' }}>
@@ -162,18 +163,18 @@ also created a persona to better understand the users we were trying to target.
                             <iframe title="demo" src="https://www.youtube.com/embed/Vz94pLQMJ20" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
                         </div>
                     </Box>
-                    <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" m={2}>
+                    {/* <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" m={2}>
                         <Box display='flex' justifyContent='center' alignItems="center"
                             className="prevProj" onClick={() => window.location.href = '/'}>
-                            <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="s" />
+                            <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="sm" />
                             <div className="returnText">PREVIOUS</div>
                         </Box>
                         <Box display='flex' justifyContent='center' alignItems="center"
                             className="nextProj" onClick={() => window.location.href = '/'}>
                             <div className="returnText">NEXT</div>
-                            <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="s" />
+                            <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="sm" />
                         </Box>
-                    </Box>
+                    </Box> */}
                 </Paper>
             </div>
         )

@@ -5,6 +5,7 @@ import colors from "../../assets/sass/colors";
 import StrumMaster from "../../assets/img/StrumMasterPreview.jpg";
 // import Website from "../../assets/img/WebsiteMockupPreview.jpg";
 import Coorporation from "../../assets/img/CoorpPreview.jpg";
+import HandLettering from "../../assets/img/CalligPreview.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 import './Projects.scss';
@@ -18,7 +19,7 @@ class Projects extends Component {
                 id: 'strumMaster',
                 img: StrumMaster,
                 title: 'Strum Master',
-                subtitle: 'designing a modified guitar for recovering stroke patients', 
+                subtitle: 'Product Design · User Testing · Development',
                 url: '/projects/strumMaster'
             },
             //  {
@@ -31,8 +32,15 @@ class Projects extends Component {
                 id: 'coorporation',
                 img: Coorporation,
                 title: 'Co-orporation!',
-                subtitle: 'a game advocating for government change',
+                subtitle: 'Prototyping · User Testing',
                 url: '/projects/coorporation'
+            },
+            {
+                id: 'handLettering',
+                img: HandLettering,
+                title: 'Hand Lettering',
+                subtitle: 'Graphic Design',
+                url: '/projects/handLettering'
             },
 
         ]

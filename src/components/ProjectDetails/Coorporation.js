@@ -26,7 +26,7 @@ import Rules from '../../assets/files/Co-orporationRules.pdf';
 
 import './ProjectDetails.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft, faArrowCircleRight, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 class Coorporation extends Component {
     render() {
@@ -36,12 +36,13 @@ class Coorporation extends Component {
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
-                            <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="s" />
+                            <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="sm" />
                             <div className="returnText">Back to Home</div>
                         </Box>
                     </Box>
                     <div className="projectTitle">Co-orporation</div>
-                    <div className="subtitle">A boardgame advocating for change</div>
+                    <div className="description">A boardgame advocating for change</div>
+                    <div className="subtitle">Product Design · User Testing · Prototyping · Graphic Design</div>
                     <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
                     <div className="header italic">Background</div>
                     <div className="body">
@@ -178,18 +179,18 @@ class Coorporation extends Component {
                     <div className="body">
                         Working on this project made me realize that the hardest part about designing a game is maintaining its fairness and entertainment. Several aspects that seem like the best design decision for a game definitely do not play out as expected when being user tested. This was apparent when we asked users if they felt like they gained any educational value from our game. Learning that the government was “evil” was definitely not the lesson, but it was one of the many aspects of the game that we had to change in order to achieve our intended goal.
                     </div>
-                    <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" m={2}>
+                    {/* <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" m={2}>
                         <Box display='flex' justifyContent='center' alignItems="center"
                             className="prevProj" onClick={() => window.location.href = '/'}>
-                            <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="s" />
+                            <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="sm" />
                             <div className="returnText">PREVIOUS</div>
                         </Box>
                         <Box display='flex' justifyContent='center' alignItems="center"
                             className="nextProj" onClick={() => window.location.href = '/'}>
                             <div className="returnText">NEXT</div>
-                            <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="s" />
+                            <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="sm" />
                         </Box>
-                    </Box>
+                    </Box> */}
                 </Paper>
             </div>
         )

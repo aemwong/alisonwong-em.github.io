@@ -35,9 +35,15 @@
     font-family: "FuturaBold";
 }
 
-.subtitle {
+.description {
     color: $dark-gray;
+}
+
+.subtitle {
+    color: darken($light-purple, 10%);
     font-size: 16pt;
+    margin-top: 15px;
+    text-transform: uppercase;
 }
 
 #bannerImg {

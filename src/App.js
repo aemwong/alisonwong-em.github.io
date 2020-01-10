@@ -11,6 +11,7 @@ import Header from './components/Header/Header';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import StrumMaster from './components/ProjectDetails/StrumMaster';
 import Coorporation from './components/ProjectDetails/Coorporation';
+import HandLettering from './components/ProjectDetails/HandLettering';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           </ Route>
           <Route path="/projects/strumMaster"><StrumMaster /></Route>
           <Route path="/projects/coorporation"><Coorporation /></Route>
+          <Route path="/projects/handLettering"><HandLettering /></Route>
         </Switch>
       </Router>
 
