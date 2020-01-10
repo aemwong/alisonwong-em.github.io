@@ -4,6 +4,11 @@ body {
     color: $dark-gray;
 }
 
+.aboutContainer {
+    width: 100vw;
+    background-color: white;
+}
+
 @media (max-width: 530px) {
     body {
       margin-top: 30px;
@@ -40,11 +45,6 @@ a.hyperlink:hover {
     width: 20%;
     background: $turquoise;
  }
-
-.aboutContainer {
-    width: 100vw;
-    background-color: white;
-}
 
 .picContainer {
     width: 25vw;
