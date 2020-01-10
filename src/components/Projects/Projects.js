@@ -32,7 +32,7 @@ class Projects extends Component {
                 img: Coorporation,
                 title: 'Co-orporation!',
                 subtitle: 'a game advocating for government change',
-                url: 'https://www.behance.net/gallery/82891991/Co-orporation'
+                url: '/projects/coorporation'
             },
 
         ]

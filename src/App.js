@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import StrumMaster from './components/ProjectDetails/StrumMaster';
+import Coorporation from './components/ProjectDetails/Coorporation';
 
 function App() {
 
@@ -28,8 +29,8 @@ function App() {
             <About />
             <Footer />
           </ Route>
-          <Route path="/projects/strumMaster"><StrumMaster />
-          </Route>
+          <Route path="/projects/strumMaster"><StrumMaster /></Route>
+          <Route path="/projects/coorporation"><Coorporation /></Route>
         </Switch>
       </Router>
 
