@@ -33,10 +33,12 @@
     font-size: calc(20px + 1vw);
     color: $turquoise;
     font-family: "FuturaBold";
+    text-align: center;
 }
 
 .description {
     color: $dark-gray;
+    text-align: center;
 }
 
 .subtitle {
@@ -44,6 +46,7 @@
     font-size: 16pt;
     margin-top: 15px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #bannerImg {
