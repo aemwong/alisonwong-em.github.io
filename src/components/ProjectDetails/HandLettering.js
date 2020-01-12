@@ -27,8 +27,9 @@ class HandLettering extends Component {
                     <div className="projectTitle">Hand Lettering</div>
                     <div className="description">Writing out quotations and lyrics for fun</div>
                     <div className="subtitle">Graphic Design · Art</div>
-                    
+                    <Box display="flex" justifyContent="center">
                     <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
+                    </Box>
                     <div className="header italic">Background</div>
                     <div className="body">
                     A collection of calligraphy/hand lettering pieces that I have made out of my own enjoyment or by request from friends. This a growing collection and my skill for this art gets better and better as I continue to practise. 

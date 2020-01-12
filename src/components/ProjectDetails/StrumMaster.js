@@ -33,7 +33,9 @@ class StrumMaster extends Component {
                     <div className="projectTitle">Strum Master</div>
                     <div className="description">Designing a modified guitar for recovering stroke patients.</div>
                     <div className="subtitle">Product Design · User Testing · Prototyping · Development</div>
-                    <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
+                    <Box display="flex" justifyContent="center">
+                        <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
+                    </Box>
                     <div className="header italic">The Problem</div>
                     <div className="body">
                         Many people find enjoyment out of playing musical instruments throughout their lifetimes.
@@ -46,10 +48,10 @@ class StrumMaster extends Component {
 
                         To ensure everyone was on the same page, we started the entire design process with a week
                             of the <a className="hyperlink" target="_blank" href="https://www.gv.com/sprint/" rel="noopener noreferrer">Google Design Sprint</a>.
-                    We were told that we could throw away the entire idea if we hated it but working through the methodology gave us an idea of the
-                    questions going through the team’s head, including HMW’s (How Might We’s). Some of the questions asked included: “How might we give
-                    users the same feeling of playing music?” and “How might we cater to musicians of any skill background?”. Each member of the group
-                    also created a persona to better understand the users we were trying to target.
+                We were told that we could throw away the entire idea if we hated it but working through the methodology gave us an idea of the
+                questions going through the team’s head, including HMW’s (How Might We’s). Some of the questions asked included: “How might we give
+                users the same feeling of playing music?” and “How might we cater to musicians of any skill background?”. Each member of the group
+                also created a persona to better understand the users we were trying to target.
                         <br /><br />
                         <Box display="flex" flexDirection="column" alignItems="center">
                             <Paper style={{ textAlign: 'center', width: 'calc(120px + 30vw)', height: '100%' }}>

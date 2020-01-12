@@ -3,7 +3,6 @@ import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import colors from "../../assets/sass/colors";
 import StrumMaster from "../../assets/img/StrumMasterPreview.jpg";
-// import Website from "../../assets/img/WebsiteMockupPreview.jpg";
 import Coorporation from "../../assets/img/CoorpPreview.jpg";
 import HandLettering from "../../assets/img/CalligPreview.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -22,12 +21,6 @@ class Projects extends Component {
                 subtitle: 'Product Design · User Testing · Development',
                 url: '/projects/strumMaster'
             },
-            //  {
-            //     id: 'personalWebsite',
-            //     img: Website,
-            //     title: 'AlisonWong-em',
-            //     subtitle: 'a personal website to showcase projects'
-            // }, 
             {
                 id: 'coorporation',
                 img: Coorporation,

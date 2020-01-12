@@ -43,7 +43,9 @@ class Coorporation extends Component {
                     <div className="projectTitle">Co-orporation</div>
                     <div className="description">A boardgame advocating for change</div>
                     <div className="subtitle">Product Design · User Testing · Prototyping · Graphic Design</div>
-                    <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
+                    <Box display="flex" justifyContent="center">
+                        <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
+                    </Box>
                     <div className="header italic">Background</div>
                     <div className="body">
                         In an investigation of design, systems, and society, we decided to create a game to advocate for a topic that we were passionate about. At the time, the effects of Bill 148 were in effect to increase minimum wage to $15 by January 1, 2019.
