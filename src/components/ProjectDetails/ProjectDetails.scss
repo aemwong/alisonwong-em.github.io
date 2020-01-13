@@ -13,6 +13,14 @@
     margin-right: 5px;
 }
 
+.prevProj {
+    text-align: left;
+}
+
+.nextProj {
+    text-align: right;
+}
+
 .return:hover {
     animation: leftSlide 0.5s ease-out forwards;
     cursor: pointer;
@@ -25,6 +33,11 @@
 
 .prevProj:hover {
     animation: leftSlide 0.5s ease-out forwards;
+    cursor: pointer;
+}
+
+.home:hover {
+    animation: upSlide 0.5s ease-out forwards;
     cursor: pointer;
 }
 
@@ -74,6 +87,15 @@
     font-size: 12pt;
     margin-top: 10px;
     text-align: center;
+}
+
+@keyframes upSlide {
+    0%   {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 @keyframes leftSlide {

@@ -5,6 +5,7 @@ import colors from "../../assets/sass/colors";
 import StrumMaster from "../../assets/img/StrumMasterPreview.jpg";
 import Coorporation from "../../assets/img/CoorpPreview.jpg";
 import HandLettering from "../../assets/img/CalligPreview.jpg";
+import PlanTrip from "../../assets/img/blaisePassenger/blaisepreview.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 import './Projects.scss';
@@ -15,6 +16,12 @@ class Projects extends Component {
 
         const projectTitles = [
             {
+                id: 'planTrip',
+                img: PlanTrip,
+                title: 'Trip Request Redesign',
+                subtitle: 'UI/UX · Web Development',
+                url: '/projects/planTrip'
+            },{
                 id: 'strumMaster',
                 img: StrumMaster,
                 title: 'Strum Master',
