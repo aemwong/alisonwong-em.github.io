@@ -3,6 +3,8 @@
 
 body {
   font-size: 14pt;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .App {
