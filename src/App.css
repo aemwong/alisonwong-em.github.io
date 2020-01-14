@@ -9,10 +9,11 @@ body {
 
 .App {
   text-align: center;
-  font-family: "Futura";
+  font-family: "FuturaLT";
   scroll-behavior: smooth;
   font-size: 14pt;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
 
 .App-logo {
