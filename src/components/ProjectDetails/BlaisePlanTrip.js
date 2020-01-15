@@ -42,7 +42,7 @@ class BlaisePlanTrip extends Component {
 
                     <div className="header italic">Goal</div>
                     <div className="body">
-                        The existing “Plan a Trip” page was created to demonstrate a working model of how the application worked. However, it was clear to the team that the screen was not designed with the best UX practices. This is evident based on competitor research and industry standards. So, we went back to the drawing board to redesign the screen to produce a minimum viable product and also to create a better experience for our users and to.
+                        The existing “Plan a Trip” page was created to demonstrate a working model of how the application worked. However, it was clear to the team that the screen was not designed with the best UX practices. This is evident based on competitor research and industry standards. So, we went back to the drawing board to redesign the screen to produce a minimum viable product and also to create a better experience for our users.
                     </div>
 
                     <br />

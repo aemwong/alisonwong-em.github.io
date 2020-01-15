@@ -48,10 +48,10 @@ class StrumMaster extends Component {
 
                         To ensure everyone was on the same page, we started the entire design process with a week
                             of the <a className="hyperlink" target="_blank" href="https://www.gv.com/sprint/" rel="noopener noreferrer">Google Design Sprint</a>.
-        We were told that we could throw away the entire idea if we hated it but working through the methodology gave us an idea of the
-        questions going through the team’s head, including HMW’s (How Might We’s). Some of the questions asked included: “How might we give
-        users the same feeling of playing music?” and “How might we cater to musicians of any skill background?”. Each member of the group
-        also created a persona to better understand the users we were trying to target.
+    We were told that we could throw away the entire idea if we hated it but working through the methodology gave us an idea of the
+    questions going through the team’s head, including HMW’s (How Might We’s). Some of the questions asked included: “How might we give
+    users the same feeling of playing music?” and “How might we cater to musicians of any skill background?”. Each member of the group
+    also created a persona to better understand the users we were trying to target.
                         <br /><br />
                         <Box display="flex" flexDirection="column" alignItems="center">
                             <Paper style={{ textAlign: 'center', width: 'calc(120px + 30vw)', height: '100%' }}>
@@ -104,6 +104,8 @@ class StrumMaster extends Component {
                             <div className="caption">Linear Potentiometer and Force Sensitive Strip</div>
                             <br />
                             We then focused on simulating the individual strings that would be found on a real guitar. Using A/B testing, we compared the use of buttons against the use of copper tape to produce sound. We had the opportunity to test the product on two users, both of which expressed that the copper tape was more appealing and easier to use. There were also comments that though it was a prototype, it was still important to keep the workspace clutter-free and robust so that the user is not intimidated or holding back their interactions with the instrument.
+                            <br />
+                            <br />
                             <Paper style={{ zDepth: 1, textAlign: 'center', width: 'calc(150px + 28vw)', overflow: 'hidden', height: '100%' }}>
                                 <img src={LFP2} alt='LFP2' style={{ width: 'calc(150px + 28vw)', height: '100%', textAlign: "center", marginBottom: -10 }} />
                             </Paper>
@@ -146,6 +148,7 @@ class StrumMaster extends Component {
                                 <img src={HFPOpen} alt='HFPOpen' style={{ width: 'calc(150px + 10vw)', height: '100%', textAlign: "center", marginBottom: -10 }} />
                             </Paper>
                         </Box>
+                        <div className="caption">Final Prototype</div>
 
                     </div>
                     <div className="header italic">Comments</div>
