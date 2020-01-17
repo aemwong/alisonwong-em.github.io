@@ -19,7 +19,7 @@ class Projects extends Component {
                 img: BlaiseLogo,
                 title: 'Software Developer',
                 company: 'Blaise Transit',
-                subtitle: 'implementing application frontends with ux best practices',
+                subtitle: 'implementing UI components and integrating external APIs with UX best practices',
                 id: 'blaise',
                 url: 'https://www.blaisetransit.com/'
             }, {
