@@ -7,6 +7,8 @@ import Coorporation from "../../assets/img/CoorpPreview.jpg";
 import HandLettering from "../../assets/img/CalligPreview.jpg";
 import PlanTrip from "../../assets/img/blaisePassenger/blaisepreview.jpg";
 import './Projects.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 class Projects extends Component {
     render() {
@@ -37,7 +39,7 @@ class Projects extends Component {
                 title: 'Hand Lettering',
                 subtitle: 'Graphic Design',
                 url: '/projects/handLettering'
-            },
+            }
 
         ]
         return (
@@ -59,7 +61,17 @@ class Projects extends Component {
                             </Paper>
                         </Box>)
 
-                    }</Box>
+                    }
+                    <Box display="flex">
+                            <Paper style={{ borderRadius: '7px' }} className="project"
+                                onClick={() => window.location.href = 'https://www.behance.net/aewong'} elevation={3}>
+                                <Box m={2} className="leftAlign" flexDirection="row" justifyContent="space-between" display="flex" alignItems="center">
+                                        <div style={{ color: colors.turquoise }}>See more of my projects on Behance!</div>
+                                        <FontAwesomeIcon icon={faExternalLinkAlt} color={colors.turquoise} />
+                                </Box>
+                            </Paper>
+                        </Box>
+                    </Box>
             </Box>
         )
     }
