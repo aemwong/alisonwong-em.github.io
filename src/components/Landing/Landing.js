@@ -28,7 +28,9 @@ class Landing extends Component {
 
                         <img src={helloGif} id="helloAnimation" alt=""></img>
                         <div className="leftAlign title">I'm Alison <span role="img" aria-label="smiley-face">🤗</span></div>
-                        <Box ml={"5vw"} ><div className="leftAlign">an aspiring product manager continually growing and welcoming new opportunities</div>
+                        <Box ml={"5vw"} ><div className="leftAlign">an aspiring product manager continually growing and welcoming new opportunities. always excited to chat,
+                        so please <a target="_blank" className="hyperlink" href="mailto:alison.wong@edu.uwaterloo.ca" rel="noopener noreferrer">reach out!</a>
+                        </div>
                             <br />
                             <div className="italic leftAlign">Currently in search of a Summer 2020 Product Internship</div></Box>
                         <br />
