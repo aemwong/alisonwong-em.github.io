@@ -32,7 +32,7 @@ class Landing extends Component {
                         so please <a target="_blank" className="hyperlink" href="mailto:alison.wong@edu.uwaterloo.ca" rel="noopener noreferrer">reach out!</a>
                         </div>
                             <br />
-                            <div className="italic leftAlign">Currently in search of a Summer 2020 Product Internship</div></Box>
+                            <div className="italic leftAlign">Currently in search of a Summer 2020 Internship!</div></Box>
                         <br />
                         <Button variant="outlined" color="primary" id="resumeButton" target="_blank" href={resume}>View Resume</Button>
                     </Box>
