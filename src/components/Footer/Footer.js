@@ -6,9 +6,9 @@ import resume from '../../assets/files/AlisonWong_Resume.pdf'
 class Footer extends Component {
     render() {
         return (
-            <Box display="flex" flexDirection="row" justifyContent="flex-end" className="footerContainer" flexGrow={1} flexWrap="wrap">
-                <Box mx={4} display="flex" className="credit"> Website created and designed by Alison Wong 
-                <span role='img' aria-label="peace-sign" style={{paddingLeft: 5 }}>✌</span></Box>
+            <Box className="footerContainer" >
+                <Box display="flex" className="credit"> Website created and designed by Alison Wong 
+                <span role='img' aria-label="peace-sign" id="emoji" >✌</span></Box>
                 <Box display="flex">
                     <a target="_blank" className="external" href="https://www.behance.net/aewong" rel="noopener noreferrer"> Behance</a>
                     <a target="_blank" className="external" href="https://github.com/alisonwong-em" rel="noopener noreferrer">Github</a>

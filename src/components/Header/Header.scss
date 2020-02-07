@@ -6,6 +6,10 @@ body {
 }
 
 .headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-family: 'FuturaCondensed';
     padding: 0px;
     position: fixed;
@@ -15,6 +19,17 @@ body {
     width: 100vw;
     top:0;
     z-index: 2;
+}
+
+.leftHeader {
+    margin-left: 24px;
+    padding-top: 8px;
+}
+
+.rightHeader {
+    display: flex;
+    margin-right: 24px;
+    padding: 16px 0;
 }
 
 .nav {

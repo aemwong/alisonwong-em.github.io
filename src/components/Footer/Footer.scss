@@ -8,6 +8,11 @@ body {
 .footerContainer {
     font-family: 'FuturaCondensed';
     margin: 15px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 a.external {
@@ -27,4 +32,9 @@ a.external:hover {
 
 .credit {
    color: darken($light-purple, 10%);
+   margin: 0 32px;
+}
+
+#emoji {
+    padding-left: 5;
 }

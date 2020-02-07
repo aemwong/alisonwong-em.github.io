@@ -17,16 +17,16 @@ class About extends Component {
 
         return (
             <ThemeProvider theme={theme}>
-                <Box className="aboutContainer" id="about" display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-evenly" alignItems="center" >
-                    <Box m={"2vw"} ml={0} className="picContainer" display="flex" justifyContent="center">
+                <Box className="aboutContainer" id="about">
+                    <Box className="picContainer" >
                         <img src={aboutPic} id="aboutPic" alt=""></img>
                         <img src={square} id="square" alt=""></img>
                     </Box>
-                    <Box my={"1vw"} mx={"0.5vw"} display="flex" flexDirection="column" alignItems="flex-start" className="bioContainer">
+                    <Box className="bioContainer">
                         <div className="leftAlign name">Alison Wong</div>
                         <div className="leftAlign">I’m a Systems Design Engineering student at the University of Waterloo (class of 2021) with an eye for design and a passion for development to create the best user experience for products.
                                 <br /><br />
-                            Outside of school and work, you might catch me singing with the <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/TheAcaBellas">UW AcaBellas</a>, 
+                            Outside of school and work, you might catch me singing with the <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/TheAcaBellas">UW AcaBellas</a>,
                             serving at <a className="hyperlink" target="_blank" href="https://www.uwccf.com/" rel="noopener noreferrer">UWCCF</a> or doodling <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/aw.doodles/">“hello”</a> on pieces of paper.
                         </div>
                         <br />

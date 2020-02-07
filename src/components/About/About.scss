@@ -7,6 +7,11 @@ body {
 .aboutContainer {
     width: 100vw;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 @media (max-width: 530px) {
@@ -49,12 +54,19 @@ a.hyperlink:hover {
 .picContainer {
     width: 25vw;
     min-width: 250px;
+    margin: 2vw;
+    display: flex;
+    justify-content: center;
 }
 
 .bioContainer {
     width: 55vw;
     min-width: 250px;
     font-size: 14pt;
+    margin: 1vw 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #square {
