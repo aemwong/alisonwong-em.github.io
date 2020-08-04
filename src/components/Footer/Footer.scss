@@ -16,6 +16,7 @@ body {
 }
 
 .footerContainer {
+    font-family: 'FuturaCondensed';
     margin: 15px 30px;
     display: flex;
     flex-direction: row;
@@ -28,7 +29,7 @@ a.external {
     text-decoration: underline;
     color: $turquoise;
     margin: 0 5px;
-    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 a.external:active, a.external:visited {
@@ -36,7 +37,7 @@ a.external:active, a.external:visited {
 }
 
 a.external:hover {
-    color: $light-blue;
+    color: darken($light-blue, 20%);
 }
 
 .credit {
