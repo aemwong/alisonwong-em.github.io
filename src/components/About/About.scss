@@ -31,7 +31,7 @@ a.hyperlink:active, a.hyperlink:visited {
 }
 
 a.hyperlink:hover {
-    color: $light-blue;
+    color: darken($light-blue, 20%);
 }
 
 .name {

@@ -11,6 +11,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     font-family: 'FuturaCondensed';
+    letter-spacing: 1px;
     padding: 0px;
     position: fixed;
     right: 0;
@@ -33,14 +34,10 @@ body {
 }
 
 .nav {
-    text-transform: capitalize;
-}
-
-.nav {
     text-decoration: none;
     color: $dark-gray;
-    margin: 0 5px;
-    text-transform: uppercase;
+    margin: 0 calc(5px + 1vw);
+    
 }
 
 .nav:hover {
