@@ -9,8 +9,7 @@ class Header extends Component {
         const HEIGHT = 50;
         const node = document.getElementById(location);
         const y = node.getBoundingClientRect().top +  window.pageYOffset - HEIGHT;
-
-
+        
         window.scrollTo({ top: y, behavior: "smooth" });
     }
 
