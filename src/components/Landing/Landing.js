@@ -23,17 +23,23 @@ class Landing extends Component {
                     <Box m={"2vw"} ml={0} className="halfContainer" display="flex" justifyContent="center">
                         <img src={introPic} id="introPic" alt=""></img>
                     </Box>
-                    <Box m={"2vw"} display="flex" flexDirection="column" alignItems="center" className="halfContainer">
+                    <Box m={"2vw"} display="flex" flexDirection="column" className="halfContainer" id="leftContainer">
 
                         <img src={helloGif} id="helloAnimation" alt=""></img>
-                        <div className="leftAlign title">I'm Alison <span role="img" aria-label="smiley-face">🤗</span></div>
-                        <Box ml={"5vw"} ><div className="leftAlign">an aspiring product manager continually growing and welcoming new opportunities. always excited to chat,
-                        so please <a target="_blank" className="hyperlink" href="mailto:alison.wong@edu.uwaterloo.ca" rel="noopener noreferrer">reach out!</a>
-                        </div>
-                            <br />
-                            <div className="italic leftAlign">Currently in search of a Summer 2020 Internship!</div></Box>
+                        <Box className="leftBody">
+                            <div className="leftAlign">I’m <b>Alison Wong</b>, a product manager continually striving for the best solutions and seeking to learn more through every experience
+                            <br /><br />
+                                <b>In search of new grad opportunities in 2021! </b><br />
+                            <a target="_blank" className="hyperlink" href="mailto:alison.wong@edu.uwaterloo.ca" rel="noopener noreferrer">Reach out</a> so we can chat
+                            <span role="img" aria-label="smiley-face"> 😊</span>
+                                <br></br>
+
+                            </div>
+                        </Box>
                         <br />
-                        <Button variant="outlined" color="primary" id="resumeButton" target="_blank" href={resume}>View Resume</Button>
+                        <Box >
+                            <Button variant="outlined" color="primary" id="resumeButton" target="_blank" href={resume}>View Resume</Button>
+                        </Box>
                     </Box>
                 </Box>
             </ThemeProvider>)

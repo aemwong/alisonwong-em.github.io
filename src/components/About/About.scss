@@ -21,24 +21,24 @@ body {
 }
 
 a.hyperlink {
-    border-bottom: 3px $turquoise dotted;
+    font-weight: bold;
+    color: $turquoise;
     text-decoration: none;
-    color: $dark-gray; 
 }
 
 a.hyperlink:active, a.hyperlink:visited {
-    color: $dark-gray;
+    color: $turquoise;
 }
 
 a.hyperlink:hover {
-    color: $turquoise,
+    color: $light-blue;
 }
 
 .name {
     font-family: "FuturaBold";
     font-size: 24pt;
     position: relative; 
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .name::after{ 

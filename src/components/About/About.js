@@ -30,7 +30,7 @@ class About extends Component {
                             serving at <a className="hyperlink" target="_blank" href="https://www.uwccf.com/" rel="noopener noreferrer">UWCCF</a> or doodling <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/aw.doodles/">“hello”</a> on pieces of paper.
                         </div>
                         <br />
-                        <div className="italic leftAlign">Currently, I’m looking for a 4-month internship in the Summer 2020 term!</div>
+                        <b>Looking for new grad opportunities in 2021!</b>
                     </Box>
                 </Box>
             </ThemeProvider >)
