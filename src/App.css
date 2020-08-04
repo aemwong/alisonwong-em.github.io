@@ -9,7 +9,7 @@ body {
 
 .App {
   text-align: center;
-  font-family: "FuturaLT";
+  font-family: "Roboto";
   scroll-behavior: smooth;
   font-size: 14pt;
   overflow-x: hidden;
@@ -36,7 +36,7 @@ body {
 }
 
 .italic {
-  font-family: "FuturaOblique";
+  font-style: italic;
 }
 
 .leftAlign {
@@ -45,10 +45,6 @@ body {
 
 .rightAlign {
   text-align: right;
-}
-
-.turquoise {
-  color: $dark-gray;
 }
 
 html {

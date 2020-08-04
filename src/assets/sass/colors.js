@@ -3,6 +3,7 @@ const darkGray = "#3B3B3B";
 const lightPurple = "#C6CAED";
 const pink = "#F7F0F5";
 const white = "#ffffff";
+const lightBlue = "#ADEDFF";
 
 const colors = {
     turquoise,
@@ -10,6 +11,7 @@ const colors = {
     lightPurple,
     pink,
     white,
+    lightBlue,
 };
 
 export default colors;

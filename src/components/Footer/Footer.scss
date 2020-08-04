@@ -1,12 +1,21 @@
 @import "../../assets/sass/theme";
 @import "../../index.css";
 
+@media screen and (max-width: 530px) {
+    #emoji {
+        display: none;
+    }
+
+    .credit {
+        margin-bottom: 10px;
+    }
+}
+
 body {
     font-size: 14pt;
 }
 
 .footerContainer {
-    font-family: 'FuturaCondensed';
     margin: 15px 30px;
     display: flex;
     flex-direction: row;
@@ -19,7 +28,7 @@ a.external {
     text-decoration: underline;
     color: $turquoise;
     margin: 0 5px;
-    text-transform: uppercase;
+    font-weight: bold;
 }
 
 a.external:active, a.external:visited {
@@ -27,14 +36,16 @@ a.external:active, a.external:visited {
 }
 
 a.external:hover {
-    color: $dark-gray;
+    color: $light-blue;
 }
 
 .credit {
    color: darken($light-purple, 10%);
-   margin: 0 32px;
+   margin-left: 32px;
+   margin-right: 32px;
 }
 
 #emoji {
-    padding-left: 5;
+    padding-left: 5px;
+    margin-top: -5px;
 }

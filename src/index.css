@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'FuturaLT';
-  src: local('FuturaLT'), url(./assets/fonts/FuturaLT.woff) format('woff');
-}
-
-@font-face {
   font-family: 'FuturaBold';
   src: local('FuturaBold'), url(./assets/fonts/FuturaLT-Bold.woff) format('woff');
 }
@@ -20,8 +15,7 @@
 
 body {
   margin: 0;
-  font-family: "FuturaLT", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
