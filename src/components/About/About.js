@@ -30,7 +30,7 @@ class About extends Component {
                             serving at <a className="hyperlink" target="_blank" href="https://www.uwccf.com/" rel="noopener noreferrer">UWCCF</a> or doodling <a className="hyperlink" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/aw.doodles/">“hello”</a> on pieces of paper.
                         </div>
                         <br />
-                        <b>Looking for new grad opportunities in 2021!</b>
+                        <b>Looking for new grad opportunities in 2021</b>
                     </Box>
                 </Box>
             </ThemeProvider >)

@@ -49,7 +49,7 @@ class Projects extends Component {
                 <Box className="projectGrid" display="flex" flexWrap="wrap" justifyContent="center">
                     {projectTitles.map((project) =>
                         <Box display="flex" key={project.id} >
-                            <Paper className="project" style={{borderRadius: '7px'}}
+                            <Paper className="project" style={{ borderRadius: '7px' }}
                                 onClick={() => window.location = project.url} elevation={0}>
                                 <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
                                     <img src={project.img} className="projectImg" alt="" />
@@ -62,16 +62,16 @@ class Projects extends Component {
                         </Box>)
 
                     }
-                    <Box display="flex">
-                            <Paper className="project"
-                                onClick={() => window.location.href = 'https://www.behance.net/aewong'} elevation={0}>
-                                <Box m={2} className="leftAlign" flexDirection="row" justifyContent="space-between" display="flex" alignItems="center">
-                                        <div style={{ color: colors.turquoise }}>See more of my projects on Behance!</div>
-                                        <FontAwesomeIcon icon={faExternalLinkAlt} color={colors.turquoise} />
-                                </Box>
-                            </Paper>
+                </Box>
+                <Box display="flex" >
+                    <Paper className="project" id="seeMore"
+                        onClick={() => window.location.href = 'https://www.behance.net/aewong'} elevation={0}>
+                        <Box m={2} className="leftAlign" flexDirection="row" justifyContent="space-between" display="flex" alignItems="center">
+                            <div style={{ color: colors.turquoise }}>See more of my projects on Behance!</div>
+                            <FontAwesomeIcon icon={faExternalLinkAlt} color={colors.turquoise} />
                         </Box>
-                    </Box>
+                    </Paper>
+                </Box>
             </Box>
         )
     }

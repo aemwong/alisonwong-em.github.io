@@ -16,7 +16,7 @@ body {
 }
 
 .footerContainer {
-    font-family: 'FuturaCondensed';
+    font-family: 'Roboto Condensed';
     margin: 15px 30px;
     display: flex;
     flex-direction: row;
@@ -26,10 +26,9 @@ body {
 }
 
 a.external {
-    text-decoration: underline;
+    text-decoration: none;
     color: $turquoise;
-    margin: 0 5px;
-    letter-spacing: 1px;
+    margin: 0 10px;
 }
 
 a.external:active, a.external:visited {
