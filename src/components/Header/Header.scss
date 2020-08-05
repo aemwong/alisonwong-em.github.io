@@ -10,8 +10,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-family: 'FuturaCondensed';
-    letter-spacing: 1px;
+    font-family: 'Roboto Condensed';
     padding: 0px;
     position: fixed;
     right: 0;
@@ -41,8 +40,17 @@ body {
 }
 
 .nav:hover {
-    color: $turquoise;
+    animation: headerLink 0.2s ease forwards;
     cursor: pointer;
+}
+
+@keyframes headerLink {
+    0%   {
+        color: $dark-gray;
+    }
+    100% {
+        color: $turquoise;
+    }
 }
 
 .logo{
@@ -53,7 +61,17 @@ body {
 }
 
 #topBtn:hover #logoGray {
+    animation: logoLink 0.2s ease forwards;
     display: block;
+}
+
+@keyframes logoLink {
+    0%   {
+        color: $turquoise;
+    }
+    100% {
+        color: $dark-gray;
+    }
 }
 
 #topBtn #logoGray {
