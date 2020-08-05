@@ -21,7 +21,7 @@ class BlaisePlanTrip extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{ borderRadius: '10px', padding: '15px 20px 30px 20px' }} >
+                <Paper style={{padding: '15px 20px 30px 20px' }} >
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
@@ -136,6 +136,7 @@ class BlaisePlanTrip extends Component {
                     <br /><br />
                         For more information on Blaise Transit and what they’re up to, visit their
                         site <a className="hyperlink" target="_blank" href='https://www.blaisetransit.com/' rel="noopener noreferrer">here</a>.
+                    <br /><br />
                     </div>
 
                     <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" mx={2} mt={5} mb={2}>

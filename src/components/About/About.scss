@@ -21,17 +21,31 @@ body {
 }
 
 a.hyperlink {
-    font-weight: bold;
-    color: $turquoise;
+    color: $dark-gray;
     text-decoration: none;
+    padding: 0 2px;
+    border-bottom: 7px darken($light-blue, 20%) solid;
+    display:inline-block;
+    line-height: 0.4;
+    position: relative;
 }
 
 a.hyperlink:active, a.hyperlink:visited {
-    color: $turquoise;
+    color: $dark-gray;
 }
 
 a.hyperlink:hover {
-    color: darken($light-blue, 20%);
+    animation: hyperlinkExtend 0.5s ease forwards;
+    cursor: pointer;
+}
+
+@keyframes hyperlinkExtend {
+    0%   {
+        border-bottom: 3px darken($light-blue, 20%) solid;
+    }
+    100% {
+        border-bottom: 8px darken($light-blue, 20%) solid;
+    }
 }
 
 .name {
@@ -67,6 +81,7 @@ a.hyperlink:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    line-height: 1.4;
 }
 
 #square {
@@ -86,11 +101,6 @@ a.hyperlink:hover {
     min-width: 200px;
     margin:3vh;
     padding:0;
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 @keyframes hoverShadow {

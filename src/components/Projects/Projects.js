@@ -49,8 +49,8 @@ class Projects extends Component {
                 <Box className="projectGrid" display="flex" flexWrap="wrap" justifyContent="center">
                     {projectTitles.map((project) =>
                         <Box display="flex" key={project.id} >
-                            <Paper style={{ borderRadius: '7px' }} className="project"
-                                onClick={() => window.location = project.url} elevation={3}>
+                            <Paper className="project" style={{borderRadius: '7px'}}
+                                onClick={() => window.location = project.url} elevation={0}>
                                 <Box m={2} className="leftAlign" flexDirection="row" justifyContent="flex-start" display="flex" alignItems="center">
                                     <img src={project.img} className="projectImg" alt="" />
                                     <Box flexDirection="column" display="flex" justifyContent="center" m={2}>
@@ -63,8 +63,8 @@ class Projects extends Component {
 
                     }
                     <Box display="flex">
-                            <Paper style={{ borderRadius: '7px' }} className="project"
-                                onClick={() => window.location.href = 'https://www.behance.net/aewong'} elevation={3}>
+                            <Paper className="project"
+                                onClick={() => window.location.href = 'https://www.behance.net/aewong'} elevation={0}>
                                 <Box m={2} className="leftAlign" flexDirection="row" justifyContent="space-between" display="flex" alignItems="center">
                                         <div style={{ color: colors.turquoise }}>See more of my projects on Behance!</div>
                                         <FontAwesomeIcon icon={faExternalLinkAlt} color={colors.turquoise} />
