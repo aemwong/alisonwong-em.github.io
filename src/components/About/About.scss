@@ -21,30 +21,28 @@ body {
 }
 
 a.hyperlink {
-    color: $dark-gray;
+    font-weight: bold;
+    color: $turquoise;
     text-decoration: none;
-    padding: 0 2px;
-    border-bottom: 7px darken($light-blue, 20%) solid;
-    display:inline-block;
-    line-height: 0.4;
+    line-height: 0.9;
     position: relative;
 }
 
 a.hyperlink:active, a.hyperlink:visited {
-    color: $dark-gray;
+    color: $turquoise;
 }
 
 a.hyperlink:hover {
-    animation: hyperlinkExtend 0.5s ease forwards;
+    animation: hyperlinkExtend 0.1s ease forwards;
     cursor: pointer;
 }
 
 @keyframes hyperlinkExtend {
     0%   {
-        border-bottom: 3px darken($light-blue, 20%) solid;
+        color: $turquoise
     }
     100% {
-        border-bottom: 8px darken($light-blue, 20%) solid;
+        color: darken($light-blue, 20%);
     }
 }
 
@@ -81,7 +79,7 @@ a.hyperlink:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 #square {

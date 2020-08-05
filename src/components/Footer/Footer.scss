@@ -37,7 +37,8 @@ a.external:active, a.external:visited {
 }
 
 a.external:hover {
-    color: darken($light-blue, 20%);
+    animation: hyperlinkExtend 0.2s ease forwards;
+    cursor: pointer;
 }
 
 .credit {
