@@ -16,7 +16,7 @@ class HandLettering extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{ borderRadius: '10px', padding: '15px 20px 30px 20px' }} >
+                <Paper style={{ padding: '15px 20px 30px 20px' }} >
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>

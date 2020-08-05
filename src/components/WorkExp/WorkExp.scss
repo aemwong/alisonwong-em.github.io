@@ -59,12 +59,10 @@ body {
 }
 
 .job:hover {
-    animation: shadow 0.5s ease forwards;
+    animation: shadowWork 0.5s ease forwards;
     cursor: pointer;
 }
-
-
-@keyframes shadow {
+@keyframes shadowWork {
     0%   {
         box-shadow: none;
         transform: scale(1.00);
@@ -74,7 +72,6 @@ body {
         transform: scale(1.01);
     }
 }
-
 @keyframes external { 
     0% {
         opacity: 0;
