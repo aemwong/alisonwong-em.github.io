@@ -6,6 +6,23 @@ body {
     font-size: 14pt;
 }
 
+.projectsName {
+    font-family: "FuturaBold";
+    font-size: 24pt;
+    position: relative; 
+    margin: 10px 0;
+}
+
+.projectsName::after{ 
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 4px; 
+    left: 0;
+    width: 100%;
+    background: $turquoise;
+ }
+
 .projectsContainer {
     height: 100%;
     width: 100vw;
