@@ -3,9 +3,10 @@ import Box from '@material-ui/core/Box';
 import colors from "../../assets/sass/colors";
 import TulipLogo from '../../assets/img/tulipIcon.png';
 import PivotalLogo from '../../assets/img/pivotallabsLogoIcon.png';
-import OpentextLogo from '../../assets/img/opentextLogoIcon.jpg';
+import OpentextLogo from '../../assets/img/opentextLogoIcon.png';
 import AccedoLogo from '../../assets/img/AccedoLogoIcon.png';
 import BlaiseLogo from '../../assets/img/b-rgb.png';
+import LifionLogo from '../../assets/img/lifionLogoIcon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import './WorkExp.scss';
@@ -16,6 +17,13 @@ class Projects extends Component {
 
         const jobTitles = [
             {
+                img: LifionLogo,
+                title: 'Technical Product Owner',
+                company: 'Lifion by ADP',
+                subtitle: 'driving and roadmapping new features to better enable HCM customers',
+                id: 'lifion',
+                url: 'https://lifion.com/'
+            }, {
                 img: BlaiseLogo,
                 title: 'Software Developer',
                 company: 'Blaise Transit',
@@ -48,7 +56,7 @@ class Projects extends Component {
                 img: PivotalLogo,
                 title: 'Agile Test Engineer',
                 company: 'Pivotal Labs',
-                subtitle: 'automating ui tests to catch regression bugs in continuous integration.',
+                subtitle: 'automating ui tests to catch regression bugs in continuous integration',
                 id: 'pivotal',
                 url: 'https://pivotal.io/labs'
             },
@@ -56,7 +64,12 @@ class Projects extends Component {
         ]
         return (
             <Box className="jobsContainer" id="experience" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly" alignContent="center">
-                <Box alignSelf="center"> <div className="italic" style={{ margin: '20px 0' }}>Some of my work experience...</div>
+                  <Box className="title" display="flex" justifyContent="center">
+                    <Box display="flex" className='titleText'>Experience</Box>
+                </Box>
+                <Box alignSelf="center">
+                    
+                      
                     {jobTitles.map((job) =>
                         <Box key={job.id} py={1} px={2} className="job leftAlign" justifyContent="flex-start" display="flex" alignItems="center"
                             onClick={() => window.open(job.url, "_blank")}>
