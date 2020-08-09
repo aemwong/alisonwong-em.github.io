@@ -7,7 +7,22 @@
     }
 
     .credit {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footerContainer {
+        justify-content: center;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (min-width: 530px) {
+    .footerContainer {
+        justify-content: flex-end;
+        flex-grow: 1;
+        flex-wrap: wrap;
     }
 }
 
@@ -20,9 +35,6 @@ body {
     margin: 15px 30px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    flex-grow: 1;
-    flex-wrap: wrap;
 }
 
 a.external {

@@ -7,7 +7,6 @@ import OriginalDesign from '../../assets/img/blaisePassenger/Plan a Trip origina
 import Comp1 from '../../assets/img/blaisePassenger/IMG_0386.PNG';
 import Comp2 from '../../assets/img/blaisePassenger/IMG_0387.PNG';
 import Comp3 from '../../assets/img/blaisePassenger/IMG_0388.PNG';
-import Whiteboard from '../../assets/img/blaisePassenger/IMG_5185.jpg';
 import EnMockup from '../../assets/img/blaisePassenger/enMockup.png';
 import FrMockup from '../../assets/img/blaisePassenger/frMockup.png';
 import RedesignGif1 from '../../assets/img/blaisePassenger/Redesign1.gif';
@@ -21,7 +20,7 @@ class BlaisePlanTrip extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{padding: '15px 20px 30px 20px' }} >
+                <Paper style={{padding: '15px' }} >
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
@@ -55,9 +54,9 @@ class BlaisePlanTrip extends Component {
 
                     <div className="header italic">Analysis</div>
                     <div className="body">
-                        The original screen contained 9 separate fields for the user to fill out. When creating any form, the number of fields should be kept to a minimum, as a greater number of fields will increasingly deter the user from completing the form. The first task was to reduce the fields to what was needed for a Minimum Viable Product (MVP), the first version of the application that would support enough features to attract early customers for feedback to develop future iterations. Due to this requirement, we removed both the return and repeat trip option, logging them as features for the next iteration. The remaining fields would contain required information in order to make a proper trip request, so the next step was to take a look at other ride-hailing applications for some design inspiration!
+                        The first task was to reduce the number of fields on the screen because the length of a form will deter users from completing it. We removed both the return and repeat trip option as these would not be features included in our Minimum Viable Product (MVP). As a next step, we took a look at other ride-hailing applications for some design inspiration!
                     <br /><br />
-                        The three major applications that we analysed were Google Maps, Uber, and Lyft. However, it is important to note that none of the above applications serve the same purpose as Blaise. Though we were analysing their design decisions for inspiration, we needed to keep our own user in mind.
+                        The three major applications that we analysed were Google Maps, Uber, and Lyft. However, these apps do not serve the same purpose as Blaise, so their design decisions were used to analyze and reframe for our own users.
                     </div>
                     <br />
 
@@ -76,17 +75,12 @@ class BlaisePlanTrip extends Component {
 
                     <br />
                     <div className="body">
-                        The main difference found between the three above applications and Blaise was the “real-time” factor. Any user opening Google Maps, Uber, or Lyft expect to have results returned closest to the present time. Also, it was a requirement on our end to include both an arrival and departure time in order for a trip request to be successful.
+                        The main difference found between the three above applications and Blaise was the “real-time” factor. Any user opening Google Maps, Uber, or Lyft expect to have results returned closest to the present time. Another difference was that we required both an arrival and departure time in order for a trip request to be successful.
                         <br /><br />
+                        
                         It was evident at this point that 4 of the time/date fields could easily be reduced to 2 by combining the separate date and time fields into one. However, based on existing applications, the origin and destination fields made more sense at the top of the screen, as users open the page expecting to enter their locations. Similar to the existing applications, we would auto-generate the origin field to the user’s current location. Since trips were required to be made 30 minutes in advance, the departure time would automatically be set to 30 minutes after the current time.
 
                     <br />
-                        <Box display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap">
-                            <Paper style={{ zDepth: 1, textAlign: 'center', width: 'calc(130px + 10vw)', overflow: 'hidden', height: '100%', margin: 5 }}>
-                                <img src={Whiteboard} alt='Whiteboard Drafts' style={{ width: 'calc(120px + 10vw)', height: '100%', textAlign: "center", marginTop: 5 }} />
-                            </Paper>
-                        </Box>
-                        <div className="caption">Whiteboard Rough Design Notes</div>
                         <br />
                         The following are mock-ups of the new “Plan a Trip” screen based on new colours that had been chosen for Blaise’s rebranding. Keep in mind that the return feature was created for a visual idea but would not be implemented for the first iteration. At first glance, the screen is already much less intimidating as there are only four fields.
                     </div>

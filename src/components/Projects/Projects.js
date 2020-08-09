@@ -45,10 +45,10 @@ class Projects extends Component {
         return (
             <Box className="projectsContainer" id="projects" display="flex" flexDirection="column" flexWrap="wrap"
                 justifyItems="space-evenly" alignItems="center" >
-                <div className="italic" style={{ margin: '20px 30px' }}>What I've been up to recently...</div>
-                {/* <div className="projectsName" alignSelf="flex-start">Projects</div> */}
+                <Box className="title" display="flex" justifyContent="center">
+                    <Box display="flex" className='titleText'>Projects</Box>
+                </Box>
                 <Box className="projectGrid" display="flex" flexWrap="wrap" justifyContent="center">
-                    
                     {projectTitles.map((project) =>
                         <Box display="flex" key={project.id} >
                             <Paper className="project" style={{ borderRadius: '7px' }}
