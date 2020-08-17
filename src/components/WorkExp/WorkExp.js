@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import colors from "../../assets/sass/colors";
 import TulipLogo from '../../assets/img/tulipIcon.png';
-import PivotalLogo from '../../assets/img/pivotallabsLogoIcon.png';
+import PivotalLogo from '../../assets/img/pivotallabsLogoIcon.svg';
 import OpentextLogo from '../../assets/img/opentextLogoIcon.png';
 import AccedoLogo from '../../assets/img/AccedoLogoIcon.png';
 import BlaiseLogo from '../../assets/img/b-rgb.png';
