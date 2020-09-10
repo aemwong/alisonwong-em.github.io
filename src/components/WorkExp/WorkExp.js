@@ -64,12 +64,12 @@ class Projects extends Component {
         ]
         return (
             <Box className="jobsContainer" id="experience" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly" alignContent="center">
-                  <Box className="title" display="flex" justifyContent="center">
+                <Box className="title" display="flex" justifyContent="center">
                     <Box display="flex" className='titleText'>Experience</Box>
                 </Box>
                 <Box alignSelf="center">
-                    
-                      
+
+
                     {jobTitles.map((job) =>
                         <Box key={job.id} py={1} px={2} className="job leftAlign" justifyContent="flex-start" display="flex" alignItems="center"
                             onClick={() => window.open(job.url, "_blank")}>
