@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReturnHome from '../ReturnHome';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import colors from '../../assets/sass/colors';
@@ -69,14 +70,7 @@ class HandLettering extends Component {
                             <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="sm" />
                         </Box>
                     </Box>
-
-                    <Box display='flex' justifyContent='center' alignItems="center" className="home" onClick={() => window.location.href = '/'}>
-                        <Box display="flex" >
-                            <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="sm" />
-                            <div className="returnText">Back to Home</div>
-                        </Box>
-                    </Box>
-
+                    <ReturnHome />
                 </Paper>
             </div>
         )

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReturnHome from '../ReturnHome';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import colors from '../../assets/sass/colors';
@@ -20,7 +21,7 @@ class BlaisePlanTrip extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{padding: '15px' }} >
+                <Paper style={{ padding: '15px' }} >
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
@@ -32,7 +33,7 @@ class BlaisePlanTrip extends Component {
                     <div className="description">Improving the user experience of planning a trip</div>
                     <div className="subtitle">UI/UX · Web Development · Competitive Analysis · User Testing</div>
                     <Box display="flex" justifyContent="center">
-                        <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
+                        <img id="bannerImg" src={Banner} alt='Blaise Plan a Trip'></img>
                     </Box>
                     <div className="header italic">Background</div>
                     <div className="body">
@@ -77,7 +78,7 @@ class BlaisePlanTrip extends Component {
                     <div className="body">
                         The main difference found between the three above applications and Blaise was the “real-time” factor. Any user opening Google Maps, Uber, or Lyft expect to have results returned closest to the present time. Another difference was that we required both an arrival and departure time in order for a trip request to be successful.
                         <br /><br />
-                        
+
                         It was evident at this point that 4 of the time/date fields could easily be reduced to 2 by combining the separate date and time fields into one. However, based on existing applications, the origin and destination fields made more sense at the top of the screen, as users open the page expecting to enter their locations. Similar to the existing applications, we would auto-generate the origin field to the user’s current location. Since trips were required to be made 30 minutes in advance, the departure time would automatically be set to 30 minutes after the current time.
 
                     <br />
@@ -145,14 +146,7 @@ class BlaisePlanTrip extends Component {
                             <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="sm" />
                         </Box>
                     </Box>
-
-                    <Box display='flex' justifyContent='center' alignItems="center" className="home" onClick={() => window.location.href = '/'}>
-                        <Box display="flex" >
-                            <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="sm" />
-                            <div className="returnText">Back to Home</div>
-                        </Box>
-                    </Box>
-                    
+                    <ReturnHome />
                 </Paper>
             </div >
         )

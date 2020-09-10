@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReturnHome from '../ReturnHome';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import colors from '../../assets/sass/colors';
@@ -32,7 +33,7 @@ class Coorporation extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{padding: '15px 20px 30px 20px' }} elevation={0}>
+                <Paper style={{ padding: '15px 20px 30px 20px' }} elevation={0}>
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
@@ -194,14 +195,7 @@ class Coorporation extends Component {
                             <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="sm" />
                         </Box>
                     </Box>
-
-                    <Box display='flex' justifyContent='center' alignItems="center" className="home" onClick={() => window.location.href = '/'}>
-                        <Box display="flex" >
-                            <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="sm" />
-                            <div className="returnText">Back to Home</div>
-                        </Box>
-                    </Box>
-
+                    <ReturnHome />
                 </Paper>
             </div>
         )

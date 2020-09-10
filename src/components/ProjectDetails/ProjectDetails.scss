@@ -14,6 +14,16 @@
     margin-right: 5px;
 }
 
+.prevProj, .nextProj {
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.return, .home {
+    padding: 5px 2px 5px 7px;
+    border-radius: 5px;
+}
+
 .prevProj {
     text-align: left;
 }
@@ -22,24 +32,22 @@
     text-align: right;
 }
 
-.return:hover {
-    animation: leftSlide 0.5s ease-out forwards;
+.return:hover, .nextProj:hover, .prevProj:hover, .home:hover {
+    animation: shadow 0.5s ease forwards;
     cursor: pointer;
 }
 
-.nextProj:hover {
-    animation: rightSlide 0.5s ease-out forwards;
-    cursor: pointer;
-}
-
-.prevProj:hover {
-    animation: leftSlide 0.5s ease-out forwards;
-    cursor: pointer;
-}
-
-.home:hover {
-    animation: upSlide 0.5s ease-out forwards;
-    cursor: pointer;
+@keyframes shadow {
+    0%   {
+        box-shadow: none;
+        transform: scale(1.00);
+    }
+    100% {
+        box-shadow:0px 1px 8px 0px rgba(0, 0, 0, 0.2),
+        0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+        0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+        transform: scale(1.01);
+    }
 }
 
 .projectTitle {
@@ -57,14 +65,15 @@
 }
 
 .subtitle {
-    color: darken($light-blue, 20%);
+    color: $turquoise;
     font-size: 13pt;
-    margin-top: 15px;
+    margin: 15px 0px 10px 0px;
     text-transform: lowercase;
     text-align: center;
 }
 
 #bannerImg {
+    min-width: 250px;
     width: 50vw;
     height: 100%;
     margin: 2vw;
@@ -72,9 +81,10 @@
 
 .header {
     color: $turquoise;
-    margin: 20px 0 5px 0;
-    font-size: 16pt;
+    margin: 30px 0 10px 0; //only applies to small screen sizes
+    font-size: 18pt;
     text-align: center;
+    font-family: FuturaOblique;
 }
 
 .body {
@@ -144,12 +154,11 @@
     } 
 
     .header {
-        margin: 20px 10vw 5px calc(10px + 8vw);
+        margin: 20px 10vw 10px 10vw;
         text-align: left;
     }
 
     .video {
         width:70%;
     }
-
  }

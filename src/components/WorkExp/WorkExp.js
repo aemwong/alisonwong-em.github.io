@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import colors from "../../assets/sass/colors";
-import TulipLogo from '../../assets/img/tulipIcon.png';
-import PivotalLogo from '../../assets/img/pivotallabsLogoIcon.svg';
-import OpentextLogo from '../../assets/img/opentextLogoIcon.png';
-import AccedoLogo from '../../assets/img/AccedoLogoIcon.png';
-import BlaiseLogo from '../../assets/img/b-rgb.png';
-import LifionLogo from '../../assets/img/lifionLogoIcon.png';
+import TulipLogo from '../../assets/img/workLogos/tulipIcon.png';
+import PivotalLogo from '../../assets/img/workLogos/pivotallabsLogoIcon.svg';
+import OpentextLogo from '../../assets/img/workLogos/opentextLogoIcon.png';
+import AccedoLogo from '../../assets/img/workLogos/AccedoLogoIcon.png';
+import BlaiseLogo from '../../assets/img/workLogos/b-rgb.png';
+import LifionLogo from '../../assets/img/workLogos/lifionLogoIcon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import './WorkExp.scss';
