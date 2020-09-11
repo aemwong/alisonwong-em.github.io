@@ -17,7 +17,7 @@ class HandLettering extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{ padding: '15px 20px 30px 20px' }} >
+                <Paper style={{ padding: '15px' }} >
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
@@ -29,7 +29,7 @@ class HandLettering extends Component {
                     <div className="description">Writing out quotations and lyrics for fun</div>
                     <div className="subtitle">Graphic Design · Art</div>
                     <Box display="flex" justifyContent="center">
-                        <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
+                        <img id="bannerImg" src={Banner} alt='Hello Hand Lettering'></img>
                     </Box>
                     <div className="header italic">Background</div>
                     <div className="body">
@@ -65,8 +65,8 @@ class HandLettering extends Component {
                             <div className="returnText">PREVIOUS:<br />Co-orporation!</div>
                         </Box>
                         <Box display='flex' justifyContent='center' alignItems="center"
-                            className="nextProj" onClick={() => window.location.href = '/projects/planTrip'}>
-                            <div className="returnText">NEXT:<br />Trip Request Redesign</div>
+                            className="nextProj" onClick={() => window.location.href = '/projects/worldclass'}>
+                            <div className="returnText">NEXT:<br />Worldclass</div>
                             <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="sm" />
                         </Box>
                     </Box>

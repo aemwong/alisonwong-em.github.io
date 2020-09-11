@@ -13,6 +13,7 @@ import StrumMaster from './components/ProjectDetails/StrumMaster';
 import Coorporation from './components/ProjectDetails/Coorporation';
 import HandLettering from './components/ProjectDetails/HandLettering';
 import BlaisePlanTrip from './components/ProjectDetails/BlaisePlanTrip';
+import Worldclass from './components/ProjectDetails/Worldclass';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/projects/coorporation"><Coorporation /></Route>
           <Route path="/projects/handLettering"><HandLettering /></Route>
           <Route path="/projects/planTrip"><BlaisePlanTrip /></Route>
+          <Route path="/projects/worldclass"><Worldclass /></Route>
         </Switch>
       </Router>
 

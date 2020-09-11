@@ -136,9 +136,9 @@ class BlaisePlanTrip extends Component {
 
                     <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" mx={2} mt={5} mb={2}>
                         <Box display='flex' justifyContent='center' alignItems="center"
-                            className="prevProj" onClick={() => window.location.href = '/projects/handLettering'}>
+                            className="prevProj" onClick={() => window.location.href = '/projects/worldclass'}>
                             <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="sm" />
-                            <div className="returnText">PREVIOUS:<br />Hand Lettering</div>
+                            <div className="returnText">PREVIOUS:<br />Worldclass</div>
                         </Box>
                         <Box display='flex' justifyContent='center' alignItems="center"
                             className="nextProj" onClick={() => window.location.href = '/projects/strumMaster'}>

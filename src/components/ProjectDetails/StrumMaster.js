@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import colors from '../../assets/sass/colors';
-import Banner from '../../assets/img/StrumMasterBanner.jpg';
+import Banner from '../../assets/img//strumMaster/StrumMasterBanner.jpg';
 import SprintMap from '../../assets/img/strumMaster/SprintMap.png';
 import Slinkey from '../../assets/img/strumMaster/slinkey.jpg';
 import Survey from '../../assets/img/strumMaster/survey.png';
@@ -22,7 +22,7 @@ class StrumMaster extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{ padding: '15px 20px 30px 20px' }} >
+                <Paper style={{ padding: '15px' }} >
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
@@ -32,6 +32,7 @@ class StrumMaster extends Component {
                     </Box>
                     <div className="projectTitle">Strum Master</div>
                     <div className="description">Designing a modified guitar for recovering stroke patients.</div>
+                    <div className="italic">In collaboration with Lorraine Li, Jonathan Ng, Heather Tian, Sitara Visram</div>
                     <div className="subtitle">Product Design · User Testing · Prototyping · Development</div>
                     <Box display="flex" justifyContent="center">
                         <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>

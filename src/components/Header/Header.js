@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import './Header.scss';
 import LogoBlue from '../../assets/img/LOGO 2.png';
-import LogoGray from '../../assets/img/LOGO_lblue.png';
+import LogoLBlue from '../../assets/img/LOGO_lblue.png';
 
 class Header extends Component {
     scrollTo(location) {
@@ -18,8 +18,8 @@ class Header extends Component {
             <Box className="headerContainer" >
                 <Box className="leftHeader">
                     <div className="nav" id='topBtn' onClick={this.scrollTo.bind(this, "home")}>
+                        <img src={LogoLBlue} className="logo" id="logoGray" alt=""></img>
                         <img src={LogoBlue} className="logo" id="logoBlue" alt=""></img>
-                        <img src={LogoGray} className="logo" id="logoGray" alt=""></img>
                     </div>
                 </Box>
 

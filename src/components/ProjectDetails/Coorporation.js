@@ -33,7 +33,7 @@ class Coorporation extends Component {
     render() {
         return (
             <div className="projectDetContainer">
-                <Paper style={{ padding: '15px 20px 30px 20px' }} elevation={0}>
+                <Paper style={{ padding: '15px' }} elevation={0}>
 
                     <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
                         <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
@@ -43,9 +43,10 @@ class Coorporation extends Component {
                     </Box>
                     <div className="projectTitle">Co-orporation</div>
                     <div className="description">A boardgame advocating for change</div>
+                    <div className="italic">In collaboration with Munir Abdunir, Allyson Aberg, Aysha Cotterill, Christopher Gregorian, Adil Jiwani</div>
                     <div className="subtitle">Product Design · User Testing · Prototyping · Graphic Design</div>
                     <Box display="flex" justifyContent="center">
-                        <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
+                        <img id="bannerImg" src={Banner} alt='Coorporation Final Prototype'></img>
                     </Box>
                     <div className="header italic">Background</div>
                     <div className="body">

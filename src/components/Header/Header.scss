@@ -56,29 +56,17 @@ body {
 
 .logo{
     width: 40px;
-    height: auto;
+    height: 40px;
     top:0;
     left:0;
 }
 
 #topBtn:hover #logoGray {
-    animation: logoLink 0.2s ease forwards;
     display: block;
-}
-
-@keyframes logoLink {
-    0%   {
-        color: $turquoise;
-    }
-    100% {
-        color: $dark-gray;
-    }
 }
 
 #topBtn #logoGray {
     position: absolute;
-    left: 0;
-    top: 0;
     display: none;
   }
 
