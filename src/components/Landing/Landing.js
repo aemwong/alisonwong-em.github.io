@@ -9,7 +9,6 @@ import colors from "../../assets/sass/colors";
 import resume from "../../assets/files/AlisonWong_Resume.pdf";
 
 class Landing extends Component {
-
     render() {
         const theme = createMuiTheme({
             palette: {
@@ -30,7 +29,7 @@ class Landing extends Component {
                             <div className="leftAlign">I’m <b>Alison Wong</b>, a product manager continually striving for the best solutions and seeking to learn more through every experience
                             <br /><br />
                                 <b>In search of new grad opportunities in 2021</b><br />
-                            <a target="_blank" className="hyperlink" href="mailto:alison.wong@edu.uwaterloo.ca" rel="noopener noreferrer">Contact me</a> so we can chat!
+                                <a target="_blank" className="hyperlink" href="mailto:alisonwong.em@gmail.com" rel="noopener noreferrer">Contact me</a> so we can chat!
                             <span role="img" aria-label="smiley-face"> 😊</span>
                                 <br></br>
 

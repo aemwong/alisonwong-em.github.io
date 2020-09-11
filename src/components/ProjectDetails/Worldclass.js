@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
 import ReturnHome from '../ReturnHome';
+import TopBackHome from '../TopBackHome';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
-import colors from '../../assets/sass/colors';
 import Banner from '../../assets/img/worldclass/worldclassBanner.png';
 import LessonPage from '../../assets/img/worldclass/Lesson.png';
 import WorldclassHome from '../../assets/img/worldclass/World-filled.png';
 import ERD from '../../assets/img/worldclass/ERD HackThe6ix.png';
-
 import './ProjectDetails.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 class Worldclass extends Component {
     render() {
         return (
             <div className="projectDetContainer">
+                <TopBackHome />
 
-                <Box display="flex" flexDirection="row" justifyContent="flex-start" alignItems="center" m={2}>
-                    <Box className="return" display='flex' justifyContent='center' alignItems="center" onClick={() => window.location.href = '/'}>
-                        <FontAwesomeIcon icon={faHome} color={colors.turquoise} size="sm" />
-                        <div className="returnText">Back to Home</div>
-                    </Box>
-                </Box>
                 <div className="projectTitle"><span role="img" aria-label="globe">🌎</span> worldclass</div>
                 <div className="description">Gamifying the remote learning experience</div>
                 <div className="subtitle">Web Development · Database Design</div>
@@ -74,13 +66,11 @@ class Worldclass extends Component {
                 <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" mx={2} mt={5} mb={2}>
                     <Box display='flex' justifyContent='center' alignItems="center"
                         className="prevProj" onClick={() => window.location.href = '/projects/handLettering'}>
-                        <FontAwesomeIcon icon={faArrowCircleLeft} color={colors.turquoise} size="sm" />
                         <div className="returnText">PREVIOUS:<br />Hand Lettering</div>
                     </Box>
                     <Box display='flex' justifyContent='center' alignItems="center"
                         className="nextProj" onClick={() => window.location.href = '/projects/planTrip'}>
                         <div className="returnText">NEXT:<br />Trip Request Redesign</div>
-                        <FontAwesomeIcon icon={faArrowCircleRight} color={colors.turquoise} size="sm" />
                     </Box>
                 </Box>
                 <ReturnHome />
