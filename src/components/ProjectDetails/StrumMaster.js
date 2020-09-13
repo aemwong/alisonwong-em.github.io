@@ -28,14 +28,14 @@ class StrumMaster extends Component {
                 <Box display="flex" justifyContent="center">
                     <img id="bannerImg" src={Banner} alt='Strum Master Final Prototype'></img>
                 </Box>
-                <div className="header italic">The Problem</div>
+                <div className="header">The Problem</div>
                 <div className="body">
                     Many people find enjoyment out of playing musical instruments throughout their lifetimes.
                     However, for those who have a physical disability, this may not be possible since most instruments require certain physical capabilities in order to be played masterfully.
                     For our third-year design project, we were given the problem space to design a musical instrument to be played by someone with a physical disability.
                     </div>
 
-                <div className="header italic">Design Sprint</div>
+                <div className="header">Design Sprint</div>
                 <div className="body">
 
                     To ensure everyone was on the same page, we started the entire design process with a week
@@ -61,7 +61,7 @@ class StrumMaster extends Component {
                             We found out that all users enjoyed playing the instrument and thought it was intuitive. However, the up and down motion of playing the instrument caused too much strain in the arm. They also expressed that they would enjoy more functionality in the instrument like volume control instead of a binary input for sound.
                         </Box>
                 </div>
-                <div className="header italic">User Testing, Research, Iteration!</div>
+                <div className="header">User Testing, Research, Iteration!</div>
                 <div className="body">
                     <Box display="flex" flexDirection="column" alignItems="center">
                         Following our sprint sessions, our group decided to move forward and design a modified MIDI guitar for experienced guitarists who are in the process of recovering from a stroke. This is defined by the stroke victim having one fully functioning hand and the other with low dexterity. The ultimate goal was for the user to be able to play in a band with friends.
@@ -95,7 +95,7 @@ class StrumMaster extends Component {
                     </Box>
                 </div>
 
-                <div className="header italic">High Fidelity Prototype (HFP)</div>
+                <div className="header">High Fidelity Prototype (HFP)</div>
                 <div className="body">
 
                     Our final prototype featured a small box used to contain all our wiring and a shorter guitar neck embellished with cosmetic pegs so that it looked like a real guitar. A switch was added to change between major and minor chords and a slider to adjust the output volume. A force sensitive strip was added at the end of the copper tape that would mute the sound when pressed. The six pieces of copper tape were mapped to play different major chords depending on the “fret” that was held on the neck. The final prototype can be seen in photos below.
@@ -116,7 +116,7 @@ class StrumMaster extends Component {
                     <div className="caption">Final Prototype</div>
 
                 </div>
-                <div className="header italic">Comments</div>
+                <div className="header">Comments</div>
                 <div className="body">Using the Google Sprint methodology helped our team work on ideation and flesh out ideas even if they wouldn’t be considered as final products. Even though certain initial brainstorming might have seemed unreasonable or impossible, they became stepping blocks to arrive at a better solution in the end.
                         <br /><br />
                         I also learned the importance of listening and understanding from the user testing sessions that were held for the different iterations of our product. Though we had a script prepared for each session, it was important to actively listen and go off-script when appropriate so that the user can elaborate on their insights. Also, it was a privilege to have been given the opportunity to test the product with real users who could give us honest feedback. You can only go so far always testing with classmates

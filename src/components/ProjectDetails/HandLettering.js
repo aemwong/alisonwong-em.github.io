@@ -22,7 +22,7 @@ class HandLettering extends Component {
                 <Box display="flex" justifyContent="center">
                     <img id="bannerImg" src={Banner} alt='Hello Hand Lettering'></img>
                 </Box>
-                <div className="header italic">Background</div>
+                <div className="header">Background</div>
                 <div className="body">
                     A collection of calligraphy/hand lettering pieces that I have made out of my own enjoyment or by request from friends. This a growing collection and my skill for this art gets better and better as I continue to practise.
                     <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
