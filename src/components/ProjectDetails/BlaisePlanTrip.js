@@ -26,12 +26,12 @@ class BlaisePlanTrip extends Component {
                 <Box display="flex" justifyContent="center">
                     <img id="bannerImg" src={Banner} alt='Blaise Plan a Trip'></img>
                 </Box>
-                <div className="header italic">Background</div>
+                <div className="header">Background</div>
                 <div className="body">
                     For four months in the fall of 2019, I was able to work as a Software Developer for Blaise Transit. Blaise is driving the public to make better use of buses by creating a software platform that will enable existing transit agencies to run on-demand bus services. I had the opportunity to work on multiple platforms while working there, one of which was the Blaise Passenger App, a web-based mobile application.
                     </div>
 
-                <div className="header italic">Goal</div>
+                <div className="header">Goal</div>
                 <div className="body">
                     The existing “Plan a Trip” page was created to demonstrate a working model of how the application worked. However, it was clear to the team that the screen was not designed with the best UX practices. This is evident based on competitor research and industry standards. So, we went back to the drawing board to redesign the screen to produce a minimum viable product and also to create a better experience for our users.
                     </div>
@@ -44,7 +44,7 @@ class BlaisePlanTrip extends Component {
                     <div className="caption">Original Screen (shown in French version of application)</div>
                 </Box>
 
-                <div className="header italic">Analysis</div>
+                <div className="header">Analysis</div>
                 <div className="body">
                     The first task was to reduce the number of fields on the screen because the length of a form will deter users from completing it. We removed both the return and repeat trip option as these would not be features included in our Minimum Viable Product (MVP). As a next step, we took a look at other ride-hailing applications for some design inspiration!
                     <br /><br />
@@ -88,7 +88,7 @@ class BlaisePlanTrip extends Component {
                 </Box>
                 <div className="caption">English and French Mockups after Redesign</div>
 
-                <div className="header italic">Implementation</div>
+                <div className="header">Implementation</div>
                 <div className="body">
                     Following this process was implementation. Though I’m not going to take the time to explain how I implemented this screen, I will mention a couple features that were implemented to enhance the user experience. The first was a custom autofill component for the location fields so that the user would be able to select a location based on their query in the field. This means that coordinates of the location are fetched before the form is submitted. Another feature was that unfilled time field would autogenerate depending on the distance between the two locations entered by the user. This ensures that the requested departure and arrival time would be physically possible before submission (we didn’t want users to request a bus travel 6000 km in 30 min <span role='img' aria-label=":P">😛</span>).
                     <br /><br />
@@ -102,7 +102,7 @@ class BlaisePlanTrip extends Component {
                     <b>So implementation is done, what now?</b> We never had a chance to test the application on our users, so that was our next step. I had the chance to interview 3 different users to use our application to evaluate the effectiveness of the redesign.
                 </div>
 
-                <div className="header italic">User Testing</div>
+                <div className="header">User Testing</div>
                 <div className="body">
                     The most eye-opening part of the testing was how all three users subconsciously skipped over the departure time field. It made me realize that there are already standards for navigation apps engraved in our brains, where the Origin field must immediately be followed by the Destination. The departure/arrival priority toggle was confusing. Two of them also asked the possibility of implementing a map as a method of selecting a location. When asked about the length of the field, there was still consensus that it was a lengthy form that “felt too long, like an extended trip planner” (User 1).
                     <br /><br />
@@ -116,7 +116,7 @@ class BlaisePlanTrip extends Component {
                 </Box>
                 <div className="caption">Demo of Final Implemented Changes</div>
 
-                <div className="header italic">Comments</div>
+                <div className="header">Comments</div>
                 <div className="body">
                     This was my first time dabbling in something UI/UX related and I had a lot of fun. Reading up on Medium posts by UX Collective or browsing designs on dribbble brought me a lot of joy. It made me realize all the more how important user testing is. Giving your design away to fresh eyes to analyse and evaluate gives unbiased opinions to what works and what doesn’t; it truly helps to set you on the right path on how to make a product better.
                     <br /><br />

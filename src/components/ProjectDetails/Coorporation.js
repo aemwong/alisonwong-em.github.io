@@ -38,7 +38,7 @@ class Coorporation extends Component {
                 <Box display="flex" justifyContent="center">
                     <img id="bannerImg" src={Banner} alt='Coorporation Final Prototype'></img>
                 </Box>
-                <div className="header italic">Background</div>
+                <div className="header">Background</div>
                 <div className="body">
                     In an investigation of design, systems, and society, we decided to create a game to advocate for a topic that we were passionate about. At the time, the effects of Bill 148 were in effect to increase minimum wage to $15 by January 1, 2019.
                     We believe that the effects caused a great disadvantage towards small businesses in the market, leading us to create a game to help educate the users about the power struggle that exists between large corporations and small businesses.
@@ -52,7 +52,7 @@ class Coorporation extends Component {
                     </Paper>
                     <div className="caption">Persona created for a potential user</div>
                 </Box>
-                <div className="header italic">Low Fidelity Prototype (LFP)</div>
+                <div className="header">Low Fidelity Prototype (LFP)</div>
                 <div className="body">
                     We had a rough idea of how to approach the project and came up with a couple drawings as to how we wanted to approach creating the game. We had two sample game board and a handful of event cards that players could draw and play. These are seen below:
                         <br /><br />
@@ -95,13 +95,13 @@ class Coorporation extends Component {
                 </div>
                 <div className="caption">First Iteration of Cards and Game Boards</div>
 
-                <div className="header italic"> User Testing Session 1</div>
+                <div className="header"> User Testing Session 1</div>
                 <div className="body">
                     During our first user testing session, we verbally read out the instructions of the game and gave them the two game boards to try. The main takeaways from the first session were that we needed to make clearer cards with the instructions on them and the government team seemed too overpowered. As for the game's social aspect, the government team came off as "evil" and opposing of everyone, which was not the main purpose of our game.
                         <br /><br />
                         The game needed to have clearer instructions, more fair gameplay, and a clearer social objective.
                         </div>
-                <div className="header italic">Medium Fidelity Prototype (MFP)</div>
+                <div className="header">Medium Fidelity Prototype (MFP)</div>
                 <div className="body">
                     We redesigned the number of cards and their effects based on the feedback to include more government cards that had effects of mutual benefit. This was done to the remove the "evil" government impression. The instructions were printed on the cards themselves to remove the need of a legend.
 
@@ -120,7 +120,7 @@ class Coorporation extends Component {
                 </Box>
                 <div className="caption">Examples of Corporation and Government Cards</div>
 
-                <div className="header italic">User Testing Session 2</div>
+                <div className="header">User Testing Session 2</div>
                 <div className="body">
                     Following a second user testing session, users indicated that the designs of the cards and the game board was not very visually appealing but that they liked the competitive aspect of the game. The game instructions needed to be made clearer.
                         <br /><br />
@@ -148,7 +148,7 @@ class Coorporation extends Component {
                     </Paper>
                 </Box>
                 <div className="caption">Final Corporation Card Design</div>
-                <div className="header italic">High Fidelity Prototype (HFP)</div>
+                <div className="header">High Fidelity Prototype (HFP)</div>
                 <div className="body">
                     The final game board was laser cut and cards were printed out. Several users had the chance to play the competitive game and explore the power struggle between corporations and the government through our game.
                         <br /><br />
@@ -169,7 +169,7 @@ class Coorporation extends Component {
                         <img src={Final} alt='Final Setup of Game' style={{ width: 'calc(150px + 8vw)', height: '100%', textAlign: "center", marginBottom: -10 }} />
                     </Paper>
                 </Box>
-                <div className="header italic">Comments</div>
+                <div className="header">Comments</div>
                 <div className="body">
                     Working on this project made me realize that the hardest part about designing a game is maintaining its fairness and entertainment. Several aspects that seem like the best design decision for a game definitely do not play out as expected when being user tested. This was apparent when we asked users if they felt like they gained any educational value from our game. Learning that the government was “evil” was definitely not the lesson, but it was one of the many aspects of the game that we had to change in order to achieve our intended goal.
                     </div>

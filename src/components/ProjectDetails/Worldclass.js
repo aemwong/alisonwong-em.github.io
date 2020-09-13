@@ -22,11 +22,11 @@ class Worldclass extends Component {
                     <img id="worldclassBanner" src={Banner} alt='worldclass'></img>
                 </Box>
 
-                <div className="header italic">Background</div>
+                <div className="header">Background</div>
                 <div className="body">
                     This year, I had the chance to participate in <a className="hyperlink" target="_blank" href="https://www.hackthe6ix.com/" rel="noopener noreferrer">Hackthe6ix 2020</a> virtually. I haven’t participated in that many hackathons in the past, but this one was especially interesting because of its remote nature. I teamed up with a couple other hackers and we decided to focus on the area of technology for education (ed-tech). We found this to be especially relevant since most students are completing school virtually due to the pandemic.
                 </div>
-                <div className="header italic">What we made</div>
+                <div className="header">What we made</div>
                 <div className="body">
                     What we built is an online education web platform called <span role="img" aria-label="globe">🌎</span> worldclass. The platform is aimed at young students. By completing different lessons assigned from their teachers, students have a chance to customize and create their own “world”. This is to gamify the online learning experience, allowing students to earn prizes and customize their world and maintaining engagement for class content.
                 </div>
@@ -43,7 +43,7 @@ class Worldclass extends Component {
                 </Box>
                 <div className="caption">Sample Lesson Page</div>
                 <br />
-                <div className="header italic">How was it built?</div>
+                <div className="header">How was it built?</div>
                 <div className="body">
                     Our database was built using PostgreSQL. We populated some mock data of teachers, students, lessons, questions, and answers. We built our endpoints and connected our database using NodeJS on Autocode, who was one of the hackathon sponsors. The front-end components were built using ReactJS and styled using CSS based on designs from Figma.
                 </div>
@@ -54,7 +54,7 @@ class Worldclass extends Component {
                     </Paper>
                     <div className="caption">ERD of Database</div>
                 </Box>
-                <div className="header italic">Comments</div>
+                <div className="header">Comments</div>
                 <div className="body">
                     Due to limitations of a hackathon, we didn’t have the chance to completely finish the prototype. But I was still given the chance to create a database and learn about relational databases by using PostgreSQL. I also hadn’t touched React in a while so it was nice to have a refresher for that as well. The best part of the 36 hour event was that I got to sleep in my own bed, instead of a random couch somewhere on a university campus! It was still a fun time despite the virtual measures!
                 <br /><br />
