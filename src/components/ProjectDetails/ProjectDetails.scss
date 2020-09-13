@@ -2,44 +2,8 @@
 
 .projectDetContainer {
     padding: 15px;
-    background-color: $light-blue;
     height: 100%;
     line-height: 1.2;
-}
-
-.returnText {
-    color: $turquoise; 
-    font-size: 12pt;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.prevProj {
-    text-align: left;
-}
-
-.nextProj {
-    text-align: right;
-}
-
-.return:hover {
-    animation: leftSlide 0.5s ease-out forwards;
-    cursor: pointer;
-}
-
-.nextProj:hover {
-    animation: rightSlide 0.5s ease-out forwards;
-    cursor: pointer;
-}
-
-.prevProj:hover {
-    animation: leftSlide 0.5s ease-out forwards;
-    cursor: pointer;
-}
-
-.home:hover {
-    animation: upSlide 0.5s ease-out forwards;
-    cursor: pointer;
 }
 
 .projectTitle {
@@ -54,17 +18,19 @@
 .description {
     color: $dark-gray;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .subtitle {
-    color: darken($light-blue, 20%);
+    color: $turquoise;
     font-size: 13pt;
-    margin-top: 15px;
+    margin: 15px 0px 10px 0px;
     text-transform: lowercase;
     text-align: center;
 }
 
 #bannerImg {
+    min-width: 250px;
     width: 50vw;
     height: 100%;
     margin: 2vw;
@@ -72,9 +38,10 @@
 
 .header {
     color: $turquoise;
-    margin: 20px 0 5px 0;
-    font-size: 16pt;
+    margin: 30px 0 10px 0; //only applies to small screen sizes
+    font-size: 18pt;
     text-align: center;
+    font-family: FuturaOblique;
 }
 
 .body {
@@ -89,33 +56,6 @@
     font-size: 12pt;
     margin-top: 10px;
     text-align: center;
-}
-
-@keyframes upSlide {
-    0%   {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(-5px);
-    }
-}
-
-@keyframes leftSlide {
-    0%   {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-10px);
-    }
-}
-
-@keyframes rightSlide {
-    0%   {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(10px);
-    }
 }
 
 .video {
@@ -144,12 +84,20 @@
     } 
 
     .header {
-        margin: 20px 10vw 5px calc(10px + 8vw);
+        margin: 20px 10vw 10px 10vw;
         text-align: left;
     }
 
     .video {
         width:70%;
     }
+ }
 
+ #worldclassBanner {
+    box-shadow:0px 1px 8px 0px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+    min-width: 250px;
+    width: 50vw;
+    margin: 2vw;
  }

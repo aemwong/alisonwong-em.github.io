@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import colors from "../../assets/sass/colors";
-import TulipLogo from '../../assets/img/tulipIcon.png';
-import PivotalLogo from '../../assets/img/pivotallabsLogoIcon.png';
-import OpentextLogo from '../../assets/img/opentextLogoIcon.png';
-import AccedoLogo from '../../assets/img/AccedoLogoIcon.png';
-import BlaiseLogo from '../../assets/img/b-rgb.png';
-import LifionLogo from '../../assets/img/lifionLogoIcon.png';
+import TulipLogo from '../../assets/img/workLogos/tulipIcon.png';
+import PivotalLogo from '../../assets/img/workLogos/pivotallabsLogoIcon.svg';
+import OpentextLogo from '../../assets/img/workLogos/opentextLogoIcon.png';
+import AccedoLogo from '../../assets/img/workLogos/AccedoLogoIcon.png';
+import BlaiseLogo from '../../assets/img/workLogos/b-rgb.png';
+import LifionLogo from '../../assets/img/workLogos/lifionLogoIcon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import './WorkExp.scss';
@@ -64,12 +64,12 @@ class Projects extends Component {
         ]
         return (
             <Box className="jobsContainer" id="experience" display="flex" flexDirection="column" flexWrap="wrap" justifyItems="space-evenly" alignContent="center">
-                  <Box className="title" display="flex" justifyContent="center">
+                <Box className="title" display="flex" justifyContent="center">
                     <Box display="flex" className='titleText'>Experience</Box>
                 </Box>
                 <Box alignSelf="center">
-                    
-                      
+
+
                     {jobTitles.map((job) =>
                         <Box key={job.id} py={1} px={2} className="job leftAlign" justifyContent="flex-start" display="flex" alignItems="center"
                             onClick={() => window.open(job.url, "_blank")}>

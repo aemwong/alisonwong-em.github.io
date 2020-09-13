@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import colors from "../../assets/sass/colors";
-import StrumMaster from "../../assets/img/StrumMasterPreview.jpg";
-import Coorporation from "../../assets/img/CoorpPreview.jpg";
-import HandLettering from "../../assets/img/CalligPreview.jpg";
-import PlanTrip from "../../assets/img/blaisePassenger/blaisepreview.jpg";
+import Worldclass from "../../assets/img/projThumbnails/worldclass.jpg";
+import StrumMaster from "../../assets/img/projThumbnails/StrumMasterPreview.jpg";
+import Coorporation from "../../assets/img/projThumbnails/CoorpPreview.jpg";
+import HandLettering from "../../assets/img/projThumbnails/CalligPreview.jpg";
+import PlanTrip from "../../assets/img/projThumbnails/blaisepreview.jpg";
 import './Projects.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -14,10 +15,16 @@ class Projects extends Component {
     render() {
         const projectTitles = [
             {
+                id: 'worldclass',
+                img: Worldclass,
+                title: '🌎 Worldclass',
+                subtitle: 'Web Dev · DB Design',
+                url: '/projects/worldclass'
+            }, {
                 id: 'planTrip',
                 img: PlanTrip,
                 title: 'Trip Request Redesign',
-                subtitle: 'UI/UX · Web Development',
+                subtitle: 'UI/UX · Web Dev',
                 url: '/projects/planTrip'
             }, {
                 id: 'strumMaster',

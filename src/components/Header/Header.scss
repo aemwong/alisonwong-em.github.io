@@ -15,8 +15,8 @@ body {
     padding: 0px;
     position: fixed;
     right: 0;
-    background-color: $white;
-    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
     width: 100vw;
     top:0;
     z-index: 2;
@@ -56,32 +56,25 @@ body {
 
 .logo{
     width: 40px;
-    height: auto;
+    height: 40px;
     top:0;
     left:0;
 }
 
 #topBtn:hover #logoGray {
-    animation: logoLink 0.2s ease forwards;
     display: block;
-}
-
-@keyframes logoLink {
-    0%   {
-        color: $turquoise;
-    }
-    100% {
-        color: $dark-gray;
-    }
 }
 
 #topBtn #logoGray {
     position: absolute;
-    left: 0;
-    top: 0;
     display: none;
   }
 
 #topBtn {
     position: relative;
+}
+
+#namePic {
+    height: 50px;
+
 }
