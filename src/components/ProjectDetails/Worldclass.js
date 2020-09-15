@@ -17,6 +17,7 @@ class Worldclass extends Component {
 
                 <div className="projectTitle"><span role="img" aria-label="globe">🌎</span> worldclass</div>
                 <div className="description">Gamifying the remote learning experience</div>
+                <div className="italic">In collaboration with Kelly Chong, Ben Ginzberg, and Viet Nguyen</div>
                 <div className="subtitle">Web Development · Database Design</div>
                 <Box display="flex" justifyContent="center">
                     <img id="worldclassBanner" src={Banner} alt='worldclass'></img>
