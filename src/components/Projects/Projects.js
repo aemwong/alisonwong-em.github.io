@@ -8,8 +8,6 @@ import Coorporation from "../../assets/img/projThumbnails/CoorpPreview.jpg";
 import HandLettering from "../../assets/img/projThumbnails/CalligPreview.jpg";
 import PlanTrip from "../../assets/img/projThumbnails/blaisepreview.jpg";
 import './Projects.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 class Projects extends Component {
     render() {
@@ -75,10 +73,10 @@ class Projects extends Component {
                 <Box display="flex" >
                     <Paper className="project" id="seeMore"
                         onClick={() => window.location.href = 'https://www.behance.net/aewong'} elevation={0}>
-                        <Box m={2} className="leftAlign" flexDirection="row" justifyContent="space-between" display="flex" alignItems="center">
+                        {/* <Box m={2} className="leftAlign" flexDirection="row" justifyContent="space-between" display="flex" alignItems="center">
                             <div style={{ color: colors.turquoise }}>See more of my projects on Behance!</div>
                             <FontAwesomeIcon icon={faExternalLinkAlt} color={colors.turquoise} />
-                        </Box>
+                        </Box> */}
                     </Paper>
                 </Box>
             </Box>
