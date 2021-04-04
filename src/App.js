@@ -4,7 +4,6 @@ import colors from './assets/sass/colors';
 import Landing from './components/Landing/Landing';
 import Gradient from './components/Gradient/Gradient';
 import Projects from './components/Projects/Projects';
-import WorkExp from './components/WorkExp/WorkExp';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
