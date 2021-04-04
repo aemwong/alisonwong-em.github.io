@@ -26,9 +26,7 @@ function App() {
             <Landing />
             <Gradient color1={colors.white} color2={colors.lightBlue} height="200px" />
             <Projects />
-            <Gradient color1={colors.lightBlue} color2={colors.pink} height="200px" />
-            <WorkExp />
-            <Gradient color1={colors.pink} color2={colors.white} height="80px" />
+            <Gradient color1={colors.lightBlue} color2={colors.white} height="200px" />
             <About />
             <Footer />
           </ Route>
