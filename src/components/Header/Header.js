@@ -25,7 +25,6 @@ class Header extends Component {
 
                 <Box className="rightHeader">
                     <div className="nav" onClick={this.scrollTo.bind(this, "projects")}>Projects</div>
-                    <div className="nav" onClick={this.scrollTo.bind(this, "experience")}>Experience</div>
                     <div className="nav" onClick={this.scrollTo.bind(this, "about")}>About</div>
                 </Box>
             </Box >
