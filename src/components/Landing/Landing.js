@@ -28,7 +28,7 @@ class Landing extends Component {
                         <Box className="leftBody">
                             <div className="leftAlign">I’m <b>Alison Wong</b>, a product manager continually striving for the best solutions and seeking to learn more through every experience
                             <br /><br />
-                                <b>In search of new grad opportunities in 2021</b><br />
+//                                 <b>In search of new grad opportunities in 2021</b><br />
                                 <a target="_blank" className="hyperlink" href="mailto:alisonwong.em@gmail.com" rel="noopener noreferrer">Contact me</a> so we can chat!
                             <span role="img" aria-label="smiley-face"> 😊</span>
                                 <br></br>
